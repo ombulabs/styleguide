@@ -1,0 +1,39 @@
+#links-buttons{
+  h2{
+    margin-bottom: 40px;
+  }
+  p {
+    float: left;
+  }
+  a.button{
+    background-color: $green;
+    color: $white;
+    padding: 0.9em 1.2em 0.9em;
+    font-size: 15px;
+    margin-right: 2%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: inline-block;
+    &:hover{
+      background-color: $button_background_color_admin_hover;
+      text-decoration: none;
+    }
+    &:active{
+      background-color: $button_background_color_admin_active;
+    }
+    &.red{
+      background-color: $red;
+      &:hover{
+        background-color: $button_background_color_admin_red_hover;
+      }
+      &:active{
+        background-color: $button_background_color_admin_red_active;
+      }
+    }
+  }
+}
+#forms input, #forms textarea{
+  width: 100%;
+}

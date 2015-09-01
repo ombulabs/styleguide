@@ -1,0 +1,30 @@
+#logo{
+  overflow: hidden;
+  .logos{
+    margin-top: 40px;
+    li{
+      width:44%;
+      float: left;
+      margin: 1% 2% 1% 0;
+      background-color: $white;
+      padding: 2%;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      &.brown{
+        background-color:$brown;
+      }
+      img{
+        margin: auto;
+        display: block;
+        padding: 50px 0px;
+        width: 100%;
+        max-width: 300px;
+      }
+      span{
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+#nav-button{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  color: $white;
+  text-decoration: none;
+  line-height: 16px;
+  transition: left 0.3s ease-in-out;
+  &:hover{
+    opacity: 0.8;
+  }
+  span{
+    display: block;
+    padding: 10px 35px 10px 10px;
+    background-image: url('../images/menu-icon.png');
+    background-repeat: no-repeat;
+    background-color: $green;
+    color:$white;
+    font-weight: bold;
+    background-position: center right 3px;
+    margin: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+}
+
+#main-nav{
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: $white;
+  font-size: 14px;
+  padding-top: 40px;
+  h1{
+    background-image: url('../images/style-guide-logo.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 120px;
+    text-indent: -9999px;
+    margin-bottom: 40px;
+  }
+  li a{
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 5px solid $white;
+    font-weight: 400;
+    &:hover{
+      border-left: 5px solid $grey;
+      color: $grey;
+    }
+    &.nav-active{
+      color: $green;
+      border-left: 5px solid $green;
+    }
+  }
+}

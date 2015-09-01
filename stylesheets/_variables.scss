@@ -1,0 +1,98 @@
+// === VARIABLES
+// ==========================
+
+
+// *** COLORS
+
+// base ombu-palette:
+$green: #2BA47D;
+$brown: #4a382f;
+$grey: #a2adad;
+$light_grey:#D3E1DE;
+$bluish_grey: #759b9f;
+$light_green: #e0efec;
+$bluish_green: #98B9AF;
+$orange: #ff8c2f;
+$light_orange: #ffc495;
+$light_yellow: #ffffdf;
+$typography_base_color: #444;
+$black:#000;
+$color_error: #c00;
+$color_warning: #DB8413;
+$color_success: #59A151;
+$red:#fd3c41;
+$light_red:#FA846F;
+$white:#ffffff;
+
+// old colors (deprecated, do not erase, but try not to use anymore):
+$darkGray:              #555;
+$gray:                  #777;
+$lightGray:             #CCC;
+$lighterGray:           #F7F7F7;
+$lightGreen:            $light_green;
+$titleGreen:            #128382;
+$powerTitleGreen:       #00635D;
+$lessBrightGreen:       #366F78;
+$brightTitleGreen:      $green;
+$titleGreenLight:       #61abab;
+$textGrey:              #55595F;
+$lightYellow:           $light_yellow;
+$textOrange:            $orange;
+$footerBrown:           $brown;
+
+// *** BUTTON COLORS
+$button_text_color: #444;
+$button_background_color_default: lighten($grey, 30%);
+$button_background_color_default_hover: lighten($button_background_color_default, 2%);
+$button_background_color_default_active: darken($button_background_color_default, 2%);
+$button_background_color_primary: $green;
+$button_background_color_primary_hover: lighten($button_background_color_primary, 7%);
+$button_background_color_primary_active: darken($button_background_color_primary, 5%);
+$button_background_color_admin: $green;
+$button_background_color_admin_hover: lighten($button_background_color_admin, 3%);
+$button_background_color_admin_active: darken($button_background_color_admin, 3%);
+$button_background_color_admin_red: $red;
+$button_background_color_admin_red_hover: lighten($button_background_color_admin_red, 3%);
+$button_background_color_admin_red_active: darken($button_background_color_admin_red, 3%);
+$button_background_color_inverse: lighten($grey, 50%);
+$button_background_color_inverse_hover: darken($button_background_color_inverse, 10%);
+$button_background_color_inverse_active: darken($button_background_color_inverse, 10%);
+
+// *** METRICS
+$mod: 20px;
+$normalSize: 23px;
+$gutter: $mod;
+$max-width: 960px;
+$base_font_size: 16px;
+$hover_transition_time: 150ms;
+$transition_time: 200ms;
+$navbar_height: 93px;
+$main_content_padding_top: ($mod*1.5);
+$image_ombu_logo_width: 214px;
+$image_ombu_logo_height: 63px;
+$image_footer_logo_width: 171px;
+$image_footer_logo_height: 46px;
+
+// *** BREAKPOINTS
+$breakpoint_375px: 375px;
+$breakpoint_500px: 500px;
+$breakpoint_768px: 768px;
+$breakpoint_992px: 992px;
+$breakpoint_1200px: 1200px;
+$breakpoint_1400px: 1400px;
+
+// *** IMAGES
+$image_ombu_logo: image-path("home/logo.png");
+$image_footer_trees: image-path("footer2.png");
+$image_icon_twitter: image-path("icon-twitter.png");
+$image_icon_facebook: image-path("icon-facebook.png");
+$image_icon_email: image-path("icon-email.png");
+$image_footer_logo: image-path("ombu-logo-footer.png");
+$image_check_green: image-path("ok-green.png");
+$image_check_green_big: image-path("plan-checked.png");
+$image_unchecked_green_big: image-path("plan-unchecked.png");
+$image_credit_cards_small: image-path("home/credit_cards_small.png");
+$image_first_content_background: image-path("home/first-content-background.png");
+$image_orange_triangle: image-path("home/orange_triangle.png");
+$image_partners_program_graphic: image-path("partners/resumen_programa_partners.png");
+$image_call_to_action_arrow: image-path("home/flecha-call-to-action.png");

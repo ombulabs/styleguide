@@ -1,0 +1,48 @@
+@media screen and (max-width: $breakpoint_992px){
+  #icons ul li{
+    width: 100%;
+  }
+  #typography ul.font-family{
+    width: 100%;
+  }
+  #color #color-samples li{
+    width: 48%;
+  }
+}
+@media screen and (max-width: $breakpoint_768px){
+  #logo .logos li{
+    width: 100%;
+  }
+  #nav-button{
+    display: block;
+  }
+  #main-nav{
+    width: 100%;
+    right: -768px;
+    left:auto;
+		&.open{
+	    right: 0;
+			li a:hover, li a:active{
+		    color:$green;
+		    border-color: $green;
+		  }
+			span{
+		    background-image: url('../images/close-icon.png');
+		  }
+	  }
+  }
+  #page-wrapper{
+    margin-left: 0;
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: $breakpoint_500px){
+  #logo .logos li img{
+    width: 80%;
+  }
+}
+@media screen and (max-width: $breakpoint_375px){
+  #color #color-samples li{
+    width: 100%;
+  }
+}

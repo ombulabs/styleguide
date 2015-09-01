@@ -1,0 +1,62 @@
+#icons ul{
+  overflow: hidden;
+  li{
+    float: left;
+    width: 50%;
+    padding: 20px 0;
+    div.icon{
+      background-image: url('../images/icons-1.png');
+      background-repeat: no-repeat;
+      width:61px;
+      height: 61px;
+      float: left;
+      background-color: $white;
+      background-position: left top;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      background-position-x:0px;
+      border: 2px solid $green;
+    }
+    div.custom-design{
+      background-position-x: -245px;
+    }
+    div.chat{
+      background-position-y: -64px;
+      background-position-x: -64px;
+    }
+    div.hosting{
+      background-position-y: -64px;
+      background-position-x: -122px;
+    }
+    div.payment-gateways{
+      background-position-y: -68px;
+      background-position-x: -180px;
+    }
+    div.wholesale{
+      background-position-y: -66px;
+      background-position-x: -240px;
+    }
+    div.facebook-store{
+      background-position-y: -64px;
+      background-position-x: -306px;
+    }
+    div.comission{
+      background-position-x: -61px;
+    }
+    div.clients{
+      background-position-x: -184px;
+    }
+    div.time{
+      background-position-x: -123px;
+    }
+    div.newsletter{
+      background-position-x: -305px;
+    }
+    span{
+      float: left;
+      margin: 20px 10px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+#typography ul.font-family{
+  font-size: 36px;
+  line-height: 44px;
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+  &.italic{
+    font-style: italic;
+  }
+  li{
+    padding-bottom: 10px;
+    &.light{
+      font-weight: 300;
+    }
+    &.bold{
+      font-weight: 700;
+    }
+    &.italic{
+      font-style: italic;
+    }
+  }
+  .paragraph{
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+#headings .h1, .h2, .h3{
+  margin: 0;
+  padding:0;
+  border: 0;
+  color: $black;
+  text-transform: none;
+  font-style: normal;
+  .h1{
+    font-size: 42px;
+    font-weight: 300;
+  }
+  .h2{
+    font-size: 36px;
+    font-weight: 300;
+  }
+  .h3{
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: none;
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
