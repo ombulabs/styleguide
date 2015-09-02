@@ -19,10 +19,11 @@
       font-style: italic;
     }
   }
-  .paragraph{
-    font-size: 16px;
-    line-height: 19px;
-  }
+}
+.paragraph{
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.05882em;
 }
 #headings .h1, .h2, .h3{
   margin: 0;
@@ -31,20 +32,25 @@
   color: $black;
   text-transform: none;
   font-style: normal;
-  .h1{
+  &.h1{
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.2em
   }
-  .h2{
-    font-size: 36px;
-    font-weight: 300;
+  &.h2{
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em
   }
-  .h3{
-    font-size: 32px;
-    font-weight: 300;
+  &.h3{
+    font-size: 27px;
+    font-weight: 700;
     text-transform: none;
     border: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    line-height: 1.2em
   }
 }

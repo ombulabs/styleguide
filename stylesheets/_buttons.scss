@@ -6,30 +6,41 @@
     float: left;
   }
   a.button{
-    background-color: $green;
+    background-color: $magenta;
     color: $white;
-    padding: 0.9em 1.2em 0.9em;
-    font-size: 15px;
+    padding: .5em 1.5em;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 400;
     margin-right: 2%;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
     display: inline-block;
+    font-style: italic;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
+    margin-bottom: 1em;
     &:hover{
-      background-color: $button_background_color_admin_hover;
+      background-color: $white;
       text-decoration: none;
+      color: $magenta;
     }
     &:active{
-      background-color: $button_background_color_admin_active;
+      color:$black;
+      background: $magenta;
     }
-    &.red{
-      background-color: $red;
+    &.secondary{
+      background-color: $white;
+      color: $black;
       &:hover{
-        background-color: $button_background_color_admin_red_hover;
+        color:$magenta;
       }
       &:active{
-        background-color: $button_background_color_admin_red_active;
+        background-color: $magenta;
+        color: $black;
       }
     }
   }

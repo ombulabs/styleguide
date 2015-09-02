@@ -10,29 +10,23 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     margin: 1% 2% 1% 0;
-    &.brown{
-      background-color: $brown;
-    }
     &.green{
       background-color: $green;
-    }
-    &.light-green{
-      background-color: $light_green;
     }
     &.orange{
       background-color: $orange;
     }
-    &.light-orange{
-      background-color: $light_orange;
-    }
     &.white{
       background-color: $white;
     }
-    &.light-yellow{
-      background-color: $light_yellow;
+    &.magenta{
+      background-color: $magenta;
     }
-    &.grey{
-      background-color: $grey;
+    &.dark-grey{
+      background-color: $dark_grey;
+    }
+    &.light-grey{
+      background-color: $light_grey;
     }
     &.black{
       background-color: $black;
