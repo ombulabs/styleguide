@@ -17,7 +17,7 @@ $gutter: 30px;
 $hover_transition_time: 200ms;
 $lean_startup_process_graph_height: 642px;
 $image_isotype_height: 80px;
-$logo_width: 410px;
+$logo_width: 260px;
 $logo_height: 60px;
 
 // Typography:
@@ -28,11 +28,11 @@ $base-font-size: 17px;
 $base-line-height: 1.4;
 
 // Breakpoints:
-$breakpoint_0: 500px;
-$breakpoint_1: 768px;
-$breakpoint_2: 992px;
-$breakpoint_3: 1200px;
-$breakpoint_4: 1400px;
+$breakpoint_500px: 500px;
+$breakpoint_768px: 768px;
+$breakpoint_992px: 992px;
+$breakpoint_1200px: 1200px;
+$breakpoint_1400px: 1400px;
 
 // Images:
 $image_isotype_static: "isotype.png";
