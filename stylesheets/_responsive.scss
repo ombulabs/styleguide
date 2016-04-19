@@ -1,4 +1,4 @@
-@media screen and (max-width: $breakpoint_2){
+@media screen and (max-width: $breakpoint_992px){
   #icons ul li{
     width: 100%;
   }
@@ -9,7 +9,7 @@
     width: 48%;
   }
 }
-@media screen and (max-width: $breakpoint_1){
+@media screen and (max-width: $breakpoint_768px){
   #logo .logos li{
     width: 100%;
   }
@@ -38,7 +38,7 @@
     padding-top: 80px;
   }
 }
-@media screen and (max-width: $breakpoint_0){
+@media screen and (max-width: $breakpoint_500px){
   #logo .logos li img{
     width: 80%;
   }
