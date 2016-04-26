@@ -6,37 +6,32 @@
     float: left;
   }
   a.button{
-    background-color: $magenta;
-    color: $white;
-    padding: .5em 1.5em;
-    font-size: 30px;
-    line-height: 42px;
+    background-color: $orange;
+    color: $black;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
     margin-right: 2%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     display: inline-block;
-    font-style: italic;
-    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
-    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.13);
     margin-bottom: 1em;
     &:hover{
-      background-color: $white;
+      background-color: lighten($orange, 10%);
       text-decoration: none;
-      color: $magenta;
     }
     &:active{
       color:$black;
       background: $magenta;
     }
     &.secondary{
-      background-color: $white;
+      background-color: $green;
       color: $black;
       &:hover{
-        color:$magenta;
+        background-color: lighten($green, 10%);
       }
       &:active{
         background-color: $magenta;
@@ -47,4 +42,20 @@
 }
 #forms input, #forms textarea{
   width: 100%;
+}
+a.link{
+  &:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #f70a7c;
+    width: 0%;
+    margin-top: 5px;
+    transition: width 0.2s ease-in;
+  }
+  &:hover{
+    &:after{
+      width: 100%;
+    }
+  }
 }

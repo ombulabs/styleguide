@@ -10,6 +10,9 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     margin: 1% 2% 1% 0;
+    &.light-green{
+      background: $light-green;
+    }
     &.green{
       background-color: $green;
     }

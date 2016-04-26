@@ -1,6 +1,6 @@
 body{
   background: #FDFCFC;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   color: $black;
 }
@@ -9,10 +9,8 @@ body.modal-active{
 }
 h1{
   font-size: 40px;
-  font-style: italic;
-  color: $magenta;
   margin-bottom: 40px;
-  font-weight: 700;
+  font-weight: 300;
 }
 h2{
   font-size: 28px;
@@ -46,20 +44,19 @@ span{
   color: $slogan_grey;
 }
 a{
-  color:$black;
+  color:$magenta;
   text-decoration: none;
-  font-weight: bold;
 }
 a:hover{
   color: $magenta;
 }
 label{
-  color: $white;
-  font-weight: 400;
-  font-size: 17px;
+  color: $slogan_grey;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: .2em;
+  display: block;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  display: inline-block;
 }
 input{
   background-color: $white;
@@ -76,6 +73,7 @@ input{
   border: 0px;
   margin: 0;
   box-shadow: none;
+  border: 1px solid $white;
 }
 
 select{
@@ -105,10 +103,12 @@ textarea{
   font-size: 1em;
   box-shadow: none;
   border: 0px;
+  border: 1px solid $white;
 }
 input:focus, select:focus, textarea:focus{
   outline: 0;
   box-shadow: none;
+  border: 1px solid $green;
 }
 #page-wrapper{
   margin-left: 250px;
@@ -124,11 +124,7 @@ input:focus, select:focus, textarea:focus{
   margin: auto;
 }
 .form-container{
-  background-color: $magenta;
+  background-color: $light-green;
   padding: 20px;
   margin-top: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
