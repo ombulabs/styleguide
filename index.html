@@ -1,13 +1,13 @@
 <html>
   <head>
     <title>OmbuLabs Style Guide</title>
-    <link rel="stylesheet" type="text/css" href="compiled/main.css">
-    <script src="javascript/jquery-1.9.1.min.js"></script>
-    <script src="javascript/jquery.scrollto.js"></script>
-    <script src="javascript/main.js"></script>
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styleguide/compiled/main.css">
+    <script src="styleguide/javascript/jquery-1.9.1.min.js"></script>
+    <script src="styleguide/javascript/jquery.scrollto.js"></script>
+    <script src="styleguide/javascript/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <a href="#" id="nav-button" class="">
@@ -30,10 +30,10 @@
         <div id="logo">
           <h2>Logo</h2>
           <ul class="logos">
-            <li><img src="images/logo-1.png"><span>Logo with tagline</span></li>
-            <li><img src="images/logo-2.png"><span>Logo with tagline / Black</span></li>
-            <li><img src="images/logo-4.png"><span>Logo</span></li>
-            <li class="black"><img src="images/logo-3.png"><span>Logo with background</span></li>
+            <li><img src="styleguide/images/logo-1.png"><span>Logo with tagline</span></li>
+            <li><img src="styleguide/images/logo-2.png"><span>Logo with tagline / Black</span></li>
+            <li><img src="styleguide/images/logo-4.png"><span>Logo</span></li>
+            <li class="black"><img src="styleguide/images/logo-3.png"><span>Logo with background</span></li>
           </ul>
         </div>
 
@@ -43,8 +43,9 @@
           <ul id="color-samples">
             <li class="black"><p>Black<span>#000000</span></p></li>
             <li class="magenta"><p>Magenta<span>#f70a7c</span></p></li>
-            <li class="green"><p>Green<span>#00ff8c</span></p></li>
+            <li class="green"><p>Green<span>#D9F1F1</span></p></li>
             <li class="orange"><p>Orange<span>#ffcc00</span></p></li>
+            <li class="light-green"><p>Light Green<span>#D9F1F1</span></p></li>
           </ul>
           <h3>Secondary colors</h3>
           <ul id="color-samples">
@@ -58,25 +59,20 @@
 
           <h3>Font Family</h3>
           <ul class="font-family">
-            <li class="light">Lato Light <span> Weight: 300</span></li>
-            <li class="normal">Lato Regular <span> Weight: 400</span></li>
-            <li class="bold">Lato Bold <span> Weight: 700</span></li>
-          </ul>
-          <ul class="font-family italic">
-            <li class="light">Lato Light Italic <span> Weight: 300, italic</span></li>
-            <li class="normal">Lato Regular Italic <span> Weight: 400, italic</span></li>
-            <li class="bold">Lato Bold Italic <span> Weight: 700, italic</span></li>
+            <li class="light">Open Sans Light <span> Weight: 300</span></li>
+            <li class="normal">Open Sans Regular <span> Weight: 400</span></li>
+            <li class="bold">Open Sans Bold <span> Weight: 700</span></li>
           </ul>
           <h3>Headings</h3>
           <div id="headings">
             <h1 class="h1">This is a large heading</h1>
-            <span>Weight 700, 42pt</span>
+            <span>Weight 300, 60pt</span>
 
             <h2 class="h2">This is a medium heading</h2>
-            <span>Weight 700, 17pt, uppercase</span>
+            <span>Weight 300, 41pt</span>
 
             <h3 class="h3">This is a small heading</h3>
-            <span>Weight 700, 17pt</span>
+            <span>Weight 700, 14pt, uppercase</span>
           </div>
           <h3>Paragraph</h3>
             <p class="paragraph">OmbuLabs helps small businesses and entrepreneurs easily setup and run their online shops. We spend our days helping businesses sell more and improving eCommerce in Latin America.</p>
@@ -86,23 +82,23 @@
         <div id="links-buttons">
           <h2>Links & Buttons</h2>
           <h3>Link</h3>
-          <p>Read <a href="#">Terms and Conditions</a></p> </br>
+          <p><a href="#" class="link">View Project</a></p> </br>
           <h3>Buttons</h3>
           <a href="#" class="button">Contact Us!</a>
-          <a href="#" class="button secondary">We're hiring</a>
+          <a href="#" class="button secondary">Send Message</a>
         </div>
 
         <div id="forms">
           <h2>Forms</h2>
             <h3>Input</h3>
           <div class="form-container">
-            <label for="name">Name</label> </br>
+            <label for="name">Your Name</label>
             <input name="name" type="text">
           </div>
 
             <h3>Textarea</h3>
             <div class="form-container">
-              <label>Message</label></br>
+              <label>Message</label>
               <textarea rows="4" cols="50"></textarea>
             </div>
 
@@ -111,15 +107,17 @@
         <div id="icons">
           <h2>Icons</h2>
           <ul>
-            <li><i class="fa fa-signal"></i><span>.fa-signal</span></li>
-            <li><i class="fa fa-refresh"></i><span>.fa-refresh</span></li>
-            <li><i class="fa fa-check"></i><span>.fa-check</span></li>
-            <li><i class="fa fa-asterisk"></i><span>.fa-asterisk</span></li>
-            <li><i class="fa fa-heart"></i><span>.fa-heart</span></li>
+            <li><i class="fa fa-star"></i><span>.fa-star</span></li>
+            <li><i class="fa fa-clock-o"></i><span>.fa-clock-o</span></li>
             <li><i class="fa fa-flask"></i><span>.fa-flask</span></li>
+            <li><i class="fa fa-comments-o"></i><span>.fa-comments-o</span></li>
+            <li><i class="fa fa-users"></i><span>.fa-users</span></li>
+            <li><i class="fa fa-pencil"></i><span>.fa-pencil</span></li>
             <li><i class="fa fa-twitter"></i><span>.fa-twitter</span></li>
             <li><i class="fa fa-github"></i><span>.fa-github</span></li>
             <li><i class="fa fa-linkedin"></i><span>.fa-linkedin</span></li>
+            <li><i class="fa fa-dribbble"></i><span>.fa-dribbble</span></li>
+            <li><i class="fa fa-slideshare"></i><span>.fa-slideshare</span></li>
           </ul>
         </div>
       </div>
