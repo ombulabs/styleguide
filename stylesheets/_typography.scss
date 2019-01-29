@@ -4,6 +4,9 @@
   width: 50%;
   float: left;
   margin-bottom: 30px;
+  &.font-family-inconsolata{
+    font-family: $font-inconsolata;
+  }
   &.italic{
     font-style: italic;
   }
@@ -21,35 +24,74 @@
   }
 }
 .paragraph{
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.05882em;
+  font-family: $font-inconsolata;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 1em;
+  &.objection, span {
+    font-weight: bold;
+    color: $red;
+    margin: 0;
+    font-size: inherit;
+    text-transform: none;
+    display: inline;
+  }
+  &.title {
+    font-family: $font-open-sans;
+    font-weight: bold;
+    color: $white;
+    width: 50%;
+    margin: 0px auto 0px auto;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: solid 1px $white;
+  }
+  &.white {
+    color: $white;
+    text-align: center;
+  }
 }
-#headings .h1, .h2, .h3{
+
+mark{
+  font-size: 20px;
+  background-color: #fdca31;
+}
+
+strong{
+  font-weight: bold;
+}
+
+#headings{
   margin: 0;
   padding:0;
   border: 0;
   color: $black;
   text-transform: none;
   font-style: normal;
-  &.h1{
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 1.2em;
+  h1{
+    font-size: 2.5em; 
+    margin-top: 1em; 
+    margin-bottom: 0em;
+    font-weight: bold;
   }
-  &.h2{
-    font-size: 41px;
-    font-weight: 300;
-    line-height: 1.2em;
+  h2{
+    font-family: $font-open-sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
   }
-  &.h3{
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;;
-    border: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    line-height: 1.2em;
-    margin-top: 20px;
+  h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: $font-inconsolata;
+  }
+  h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $red;
+    font-size: 19px;
+    font-family: $font-inconsolata;
   }
 }

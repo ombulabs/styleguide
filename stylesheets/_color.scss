@@ -10,26 +10,23 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     margin: 1% 2% 1% 0;
-    &.light-green{
-      background: $light-green;
-    }
     &.green{
       background-color: $green;
-    }
-    &.orange{
-      background-color: $orange;
     }
     &.white{
       background-color: $white;
     }
-    &.magenta{
-      background-color: $magenta;
+    &.yellow{
+      background-color: $yellow;
+    }
+    &.red{
+      background-color: $red;
     }
     &.dark-grey{
-      background-color: $dark_grey;
+      background-color: $grey_medium;
     }
     &.light-grey{
-      background-color: $light_grey;
+      background-color: $grey_light;
     }
     &.black{
       background-color: $black;
@@ -47,7 +44,7 @@
     letter-spacing: 0.5px;
     font-size: 12px;
     line-height: 16px;
-    border-top: 1px solid $light_grey;
+    border-top: 1px solid $grey_light;
     span{
       display: block;
     }
