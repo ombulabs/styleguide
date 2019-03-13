@@ -16,7 +16,7 @@
     padding: 10px 35px 10px 10px;
     background-image: url('../images/menu-icon.png');
     background-repeat: no-repeat;
-    background-color: $magenta;
+    background-color: $red;
     color:$white;
     font-weight: bold;
     background-position: center right 3px;
@@ -42,11 +42,12 @@
   font-size: 14px;
   padding-top: 40px;
   h1{
-    background-image: url('../images/style-guide-logo.png');
+    background-image: url('../images/logo-1.png');
     background-repeat: no-repeat;
     background-position: 25px;
     height: 200px;
     text-indent: -9999px;
+    background-size: 80%;
     margin-bottom: 40px;
   }
   li a{
@@ -59,12 +60,12 @@
     border-left: 5px solid $black;
     font-weight: 400;
     &:hover{
-      border-left: 5px solid $orange;
-      color: $orange;
+      border-left: 5px solid $yellow;
+      color: $yellow;
     }
     &.nav-active{
-      color: $magenta;
-      border-left: 5px solid $magenta;
+      color: $red;
+      border-left: 5px solid $red;
     }
   }
 }

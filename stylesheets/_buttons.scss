@@ -6,37 +6,26 @@
     float: left;
   }
   a.button{
-    background-color: $orange;
-    color: $black;
-    padding: 10px 20px;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    margin-right: 2%;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 1em;
+    display: block;
+    width: 40%;
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+    color: #fff;
+    font-family: $font-open-sans;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    transition: 0.5s;
+    text-decoration: none;
     &:hover{
-      background-color: lighten($orange, 10%);
-      text-decoration: none;
+      background-color: $green;
+      background-image: none;
     }
     &:active{
-      color:$black;
-      background: $magenta;
-    }
-    &.secondary{
+      color:$white;
       background-color: $green;
-      color: $black;
-      &:hover{
-        background-color: lighten($green, 10%);
-      }
-      &:active{
-        background-color: $magenta;
-        color: $black;
-      }
+      background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
     }
   }
 }
@@ -44,14 +33,23 @@
   width: 100%;
 }
 a.link{
+  &.red{
+    &:after{
+      background-color: $red;
+    }
+  }
+  &.yellow{
+    &:after{
+      background-color: $yellow;
+    }
+  }
   &:after{
     content: "";
     display: block;
     height: 2px;
-    background-color: #f70a7c;
+    background-color: $white;
     width: 0%;
     margin-top: 5px;
-    transition: width 0.2s ease-in;
   }
   &:hover{
     &:after{
