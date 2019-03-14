@@ -177,12 +177,13 @@ input:focus, select:focus, textarea:focus {
   border-radius: 24px;
   display: inline-block; }
   .flash-message.flash-error {
-    background: #FFCC00; }
-  .flash-message.flash-warning {
     background: #F70A7C;
     color: #ffffff; }
+  .flash-message.flash-warning {
+    background: #FFCC00; }
   .flash-message.flash-success {
-    background: #57CE81; }
+    background: #57CE81;
+    color: #ffffff; }
   .flash-message.flash-info {
     background: #999;
     color: #ffffff; }
