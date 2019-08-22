@@ -1,59 +1,60 @@
-#links-buttons{
-  h2{
-    margin-bottom: 40px;
+// Buttons
+.btn{
+  background-color: $green;
+  color: $white;
+  text-align: center;
+  padding: 1.22rem 3rem;
+  border-radius: 0;
+  @include source-code-black;
+  transition: $transition;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  border: none;
+  &:hover, &:active, &:focus{
+    background-color: darken( $green, 10% );
+    color: $white;
+    transition: $transition;
   }
-  p {
-    float: left;
-  }
-  a.button{
-    display: block;
-    width: 40%;
-    background-color: #28a745;
-    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
-    color: #fff;
-    font-family: $font-open-sans;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    transition: 0.5s;
-    text-decoration: none;
-    &:hover{
-      background-color: $green;
-      background-image: none;
-    }
-    &:active{
-      color:$white;
-      background-color: $green;
-      background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
-    }
+  @include respond-above(sm) {
+    font-size: 1rem;
   }
 }
-#forms input, #forms textarea{
-  width: 100%;
-}
-a.link{
-  &.red{
-    &:after{
-      background-color: $red;
-    }
-  }
-  &.yellow{
-    &:after{
-      background-color: $yellow;
-    }
-  }
-  &:after{
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: $white;
-    width: 0%;
-    margin-top: 5px;
-  }
+
+.btn-link{
+  color: $black;
+  text-decoration: underline;
+  transition: $transition;
+  padding: 0 3rem;
   &:hover{
-    &:after{
-      width: 100%;
+    color: $green;
+    transition: $transition;
+    text-decoration: none;
+  }
+  @include respond-above(sm) {
+    font-size: 1rem;
+  }
+  &.active{
+    color: $green;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+.top-top{
+  position: absolute;
+  z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    a{
+      display: block;
     }
+}
+a{
+  color: $green;
+  text-decoration: underline;
+  &:hover{
+    color: $green;
+    text-decoration: none;
   }
 }

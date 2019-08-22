@@ -1,54 +1,23 @@
 // === VARIABLES
 // ==========================
 
-// Colors:
-$black: #000000;
-$white: #ffffff;
-$red: #ef201b;
+// New Colors
+$black: #222222;
+$white: #f8f8f8;
+$red: #ff0000;
 $yellow: #fdca31;
-$yellow_ombu: #ffcc00;
-$grey: #29292c;
-$grey_medium: #323235;
-$grey_light: #b2b2bc;
-$green: #33E46D;
-$magenta: #ec037c;
-
-// Measurements:
-$gutter: 30px;
-$hover_transition_time: 200ms;
-$lean_startup_process_graph_height: 642px;
-$image_isotype_height: 80px;
-$logo_width: 260px;
-$logo_height: 60px;
-$header_height: 90px;
+$green: #00d242;
+$grey: #323235;
+$light-grey: #dadada;
 
 // Typography:
-$font-lato: "Lato", "Helvetica", Arial, sans-serif;
-$font-open-sans: "Open Sans", "Helvetica", Arial, sans-serif;
-$font-maven: "Maven", "Lato", "Helvetica", Arial, sans-serif;
-$font-inconsolata: "Inconsolata", serif;
-$base-font-size: 17px;
-$base-line-height: 1.4;
+$font-source-code: "Source Code Pro", monospace;
 
-// Breakpoints:
+// Transition:
+$transition: all .2s ease-in;
+
+// Breakpoint
 $breakpoint_500px: 500px;
 $breakpoint_768px: 768px;
-$breakpoint_992px: 992px;
-$breakpoint_1200px: 1200px;
-$breakpoint_1400px: 1400px;
+$breakpoint_960px: 960px;
 
-// Images:
-$image_isotype_static: "isotype.png";
-$image_isotype_animated: "isotype_vector.svg";
-
-$image_green_triangle: "green_triangle.png";
-$image_lean_square: "lean_square.png";
-$image_agile_circle: "agile_circle.png";
-$image_ux_triangle: "ux_triangle.png";
-$image_lean_process_old: "lean_process.png";
-$image_lean_process: "lean_startup_process_graph.svg";
-$image_circles_background_arrow: "circles_background_arrow.png";
-$image_staff_ernesto: "staff-nesto-final.jpg";
-$image_staff_lucas: "staff-luke-final.jpg";
-$image_staff_mauro: "staff-mauro_2.jpg";
-$image_staff_ignacio: "staff-ignacio.jpg";
