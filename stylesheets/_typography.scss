@@ -1,97 +1,113 @@
-#typography ul.font-family{
-  font-size: 36px;
-  line-height: 44px;
-  width: 50%;
-  float: left;
-  margin-bottom: 30px;
-  &.font-family-inconsolata{
-    font-family: $font-inconsolata;
-  }
-  &.italic{
-    font-style: italic;
-  }
-  li{
-    padding-bottom: 10px;
-    &.light{
-      font-weight: 300;
-    }
-    &.bold{
-      font-weight: 700;
-    }
-    &.italic{
-      font-style: italic;
-    }
-  }
+// Font Variables
+$light: 300;
+$medium: 500;
+$bold: 900;
+
+// Source Code Font
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500,900&display=swap');
+
+@mixin source-code-light{
+  font-family: $font-source-code;
+  font-weight: $light;
 }
-.paragraph{
-  font-family: $font-inconsolata;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 1em;
-  &.objection, span {
-    font-weight: bold;
-    color: $red;
-    margin: 0;
-    font-size: inherit;
-    text-transform: none;
-    display: inline;
-  }
-  &.title {
-    font-family: $font-open-sans;
-    font-weight: bold;
-    color: $white;
-    width: 50%;
-    margin: 0px auto 0px auto;
-    padding-bottom: 20px;
-    text-align: center;
-    border-bottom: solid 1px $white;
-  }
-  &.white {
-    color: $white;
-    text-align: center;
+
+@mixin source-code-medium{
+  font-family: $font-source-code;
+  font-weight: $medium;
+}
+
+@mixin source-code-black{
+  font-family: $font-source-code;
+  font-weight: $bold;
+}
+
+body{
+  @include source-code-medium;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.36px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: 0.875rem;
+  line-height: 1.42;
+  letter-spacing: 0.7px;
+  margin-bottom:  1.625rem;
+  @include respond-above(xs) {
+    font-size: 1rem;
   }
 }
 
-mark{
-  font-size: 20px;
-  background-color: #fdca31;
+h1 {
+  @include source-code-black;
+  font-size: 1.75rem;
+  line-height: 1.08;
+  letter-spacing: 1.18px;
+  margin-bottom:  2rem;
+  @include respond-above(sm) {
+    font-size: 2.625rem;
+    margin-bottom:  3rem;
+  }
+  @include respond-above(md) {
+    font-size: 3.25rem;
+    line-height: 1.25;
+    margin-bottom:  4rem;
+  }
 }
 
-strong{
+h2 {
+  @include source-code-light;
+  font-size: 1rem;
+  line-height: 1.32;
+  letter-spacing: 0.5px;
+  margin-bottom:  1.625rem;
+  @include respond-above(xs) {
+    font-size: 1rem;
+  }
+  @include respond-above(sm) {
+    font-size: 1.375rem
+  }
+}
+
+strong {
   font-weight: bold;
 }
 
-#headings{
+em {
+  font-style: italic;
+}
+
+.underlined{
+  border-bottom: 3px solid $yellow;
+  display: inline;
+  padding-bottom: 1rem;
+}
+
+mark{
+  background-color: $green;
+}
+
+ul, ol{
   margin: 0;
-  padding:0;
-  border: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    display: block;
+    padding: 0 1rem;
+    @include source-code-black;
+  }
+}
+
+code {
+  font-family: monospace;
   color: $black;
-  text-transform: none;
-  font-style: normal;
-  h1{
-    font-size: 2.5em; 
-    margin-top: 1em; 
-    margin-bottom: 0em;
-    font-weight: bold;
-  }
-  h2{
-    font-family: $font-open-sans;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0;
-  }
-  h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: $font-inconsolata;
-  }
-  h5{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $red;
-    font-size: 19px;
-    font-family: $font-inconsolata;
-  }
+  background-color: rgba($grey, .1);
+}
+
+.font-family{
+  .light{@include source-code-light;}
+  .medium{@include source-code-medium;}
+  .black{@include source-code-black;}
 }

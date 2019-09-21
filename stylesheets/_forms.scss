@@ -1,0 +1,123 @@
+#forms{
+	.form-error {
+	  color: $red;
+	  padding: 1rem 2rem;
+	  border: 2px solid $red;
+	  color: $black;
+	  text-align: left;
+	  margin: 1em 0;
+	  i {
+	    color: $yellow;
+	  }
+	}
+
+	.success-message{
+	  background-color: $green;
+	  color: $white;
+	  padding: 10px;
+	  height: 27px;
+	}
+
+	.error-explanation{
+	  background-color: $red;
+	  color: $white;
+	  padding: 10px;
+	  height: 27px;
+	}
+
+	.form-success{
+	  text-align: left;
+	  padding: 2rem;
+	  border: 2px solid $green;
+	  color: $black;
+	}
+
+	#validation-box{
+	  width: 100%;
+	}
+	.mdl-textfield--floating-label, .mdl-textfield--floating-label.has-placeholder, .mdl-textfield--floating-label.is-dirty {
+    position: relative;
+    width: 100%;
+    .mdl-textfield__label{
+      color: $green;
+      &::after{
+        background-color: darken( $green, 10% );
+        height: 3px;
+      }
+    }
+    .mdl-textfield__value{
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $light-grey;
+    }
+    select{
+      cursor: pointer;
+    }
+    .mdl-textfield__chevron{
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $black;
+    }
+    .mdl-textfield__input{
+      background-color: rgba($light-grey, .58);
+      border-bottom: 3px solid $green;
+      padding: 10px 15px;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &::placeholder{
+        color: rgba($grey, .28);
+      }
+    }
+    .mdl-slider__container{
+      margin-top: 2.1rem;
+      input[type=range]::-webkit-slider-thumb {
+          background: $green;
+          transform: scale(2);
+      }
+      input[type=range]::-moz-range-thumb {
+          background: $green;
+          transform: scale(2);
+      }
+      input[type=range]::-ms-thumb {
+          background: $green;
+          transform: scale(2);
+      }
+      .mdl-slider{
+        margin: 0;
+      }
+      .mdl-slider__background-flex{
+        width: 100%;
+        margin: 0;
+        height: 3px;
+        background-color: transparent;
+        .mdl-slider__background-lower{
+          background-color: rgba($light-grey, .58);
+        }
+        .mdl-slider__background-upper{
+          background-color: rgba($light-grey, .58);
+        }
+      }
+    }
+  }
+  .mdl-textfield--floating-label.is-invalid{
+    .mdl-textfield__label{
+      color: $red;
+      &::after{
+        background-color: darken( $red, 10% );
+        height: 3px;
+      }
+    }
+    .mdl-textfield__input{
+      border-bottom: 3px solid $red;
+    }
+  }
+}

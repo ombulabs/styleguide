@@ -1,104 +1,34 @@
 body{
-  background: #FDFCFC;
-  font-family: $font-open-sans;
+  background: $white;
+  font-family: $font-source-code;
   -webkit-font-smoothing: antialiased;
   color: $black;
-}
-body.modal-active{
-  overflow: hidden;
-}
-h1{
-  font-size: 40px;
-  margin-bottom: 40px;
-  font-weight: 300;
-}
-h2{
-  font-size: 28px;
-  font-weight: 700;
-  padding-top: 40px;
-  clear: both;
-  padding-bottom: 10px;
-}
-h3{
-  font-size: 16px;
-  margin: 40px 0 10px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  clear: both;
-  padding-bottom: 10px;
-  font-weight: 700;
-}
-p{
-  line-height: 1.3em;
-}
-span{
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  margin: 6px 0;
-  color: $grey_medium;
-}
-a{
-  text-decoration: none;
-  color: $white;
-  &.red{
-    color: $red;
+  padding-top: 4rem;
+  .modal-active{
+    overflow: hidden;
   }
-  &.yellow{
-    color: $yellow;
-  }
-}
-
-label{
-  color: $grey_light;
-  font-size: 12px;
-  font-weight: 700;
-  display: block;
-  text-transform: uppercase;
-  font-family: $font-open-sans;
-  line-height: 30px;
-  margin-bottom: 1em;
-  padding: 0.5em;
-}
-input, textarea, select{
-  display: block;
-  background-color: $grey_medium;
-  border: none;
-  height: 35px;
-  width: 100%;
-  margin-bottom: 10px;
-  font-family: $font-inconsolata;
-  font-size: 16px;
-  color: $grey_light;
-  padding: 0.25em 0.5em 0.25em 0.25em;
-  box-sizing: content-box;
-}
-input:focus, select:focus, textarea:focus{
-  outline: 0;
-  box-shadow: none;
-}
-textarea{
-  height: auto;
 }
 #page-wrapper{
-  margin-left: 250px;
+  margin-left: 0px;
   padding-top: 40px;
   position: relative;
   z-index: 10;
   min-height: 100%;
-  margin-bottom: 200px;
+  @include respond-above(sm) {
+    margin-left: 250px;
+  }
 }
 #sections{
   width: 80%;
   max-width: 800px;
   margin: auto;
+  .section{
+    padding: 60px 0;
+    .section-content{
+      background-color: rgba($light_grey, .3);
+      padding: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
 }
-.form-container{
-  background-color: $grey;
-  padding: 20px;
-  margin-top: 20px;
-}
+
