@@ -3,9 +3,13 @@ $(document).ready(function(){
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
      */
-    $("#main-nav a").click(function(evn){
+    $(".hash-link").click(function(evn){
         evn.preventDefault();
         $('html,body').scrollTo(this.hash, this.hash);
+    });
+
+    $(".link").click(function(evn){
+        evn.preventDefault();
     });
 
     /**
@@ -44,10 +48,6 @@ $(document).ready(function(){
                 $("#main-nav li:first-child a").addClass("nav-active");
             }
         }
-    });
-
-    $( "a" ).click(function( event ) {
-      event.preventDefault();
     });
 
     $("#nav-button").click(function(){
