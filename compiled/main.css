@@ -151,11 +151,15 @@ body {
   #logo .logos {
     margin-top: 40px; }
     #logo .logos li {
-      width: 46%;
-      float: left;
+      width: 100%;
+      float: none;
       background: rgba(218, 218, 218, 0.3);
       margin: 10px;
       padding-bottom: 10px; }
+      @media (min-width: 992px) {
+        #logo .logos li {
+          width: 45%;
+          float: left; } }
       #logo .logos li img {
         margin: auto;
         display: block;
