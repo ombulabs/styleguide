@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-class Styleguide
-  def self.hi
-    puts 'Hello world!'
+module Styleguide
+  module Rails
+    class Engine < ::Rails::Engine
+    end
   end
 end
