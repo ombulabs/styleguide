@@ -18,7 +18,7 @@
   span{
     display: block;
     padding: 10px 35px 10px 10px;
-    background-image: url('../images/menu-icon.png');
+    background-image: url('../../images/menu-icon.png');
     background-repeat: no-repeat;
     background-color: $red;
     color:$white;
@@ -50,7 +50,7 @@
     transition: left 0.3s ease-in-out;
   }
   h1{
-    background-image: url('../images/logo-1.png');
+    background-image: url('../../images/logo-1.png');
     background-repeat: no-repeat;
     background-position: 25px;
     height: 200px;
