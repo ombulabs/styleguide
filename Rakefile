@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-BUNDLES     = %w[ombulabs-styleguide.css ombulabs-styleguide.js].freeze
+BUNDLES     = %w[styleguide.css styleguide.js].freeze
 BUILD_DIR   = File.expand_path('static')
 SOURCE_DIR  = File.expand_path('vendor/assets/')
 
