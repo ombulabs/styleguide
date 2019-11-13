@@ -1,6 +1,6 @@
 # Ombulabs::Styleguide
 
-## Installation
+## Ruby on Rails Installation
 
 Add this line to your application's Gemfile:
 
@@ -35,4 +35,16 @@ In application.js add:
 //= require ommbulabs/styleguide
 ```
 
+## Static generation
 
+From the gem folder
+
+    $ bundle
+    
+Build static
+
+    $ rake precompile_assets
+    
+Styles and Javascript files are in `static` folder.
+
+Components can be checked if `index.html` file is opened in a browser.
