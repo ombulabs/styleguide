@@ -1,3 +1,7 @@
+//= require jquery
+//= require jquery_ujs
+//= require popper
+
 $(document).ready(function(){
     /**
      * This part causes smooth scrolling using scrollto.js
