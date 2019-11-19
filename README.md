@@ -21,18 +21,18 @@ Or install it yourself as:
 In application.css, add:
 
 ```ruby
-*= require ommbulabs/styleguide
+*= require ombulabs/styleguide
 ```
 
 or if you are using scss: appliation.scss
 
 ```ruby
-@import "ommbulabs/styleguide";
+@import "ombulabs/styleguide";
 ```
 
 In application.js add:
 ```ruby
-//= require ommbulabs/styleguide
+//= require ombulabs/styleguide
 ```
 
 ## Static generation
