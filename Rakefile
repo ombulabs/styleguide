@@ -15,6 +15,16 @@ task :precompile_assets do
   sprockets = Sprockets::Environment.new
   sprockets.css_compressor = :scss
 
+  sprockets.context_class.class_eval do
+    def asset_path(path, options = {})
+      File.join('images', path)
+    end
+
+    def asset_url(path, options = {})
+      "url(#{asset_path(path)})"
+    end
+  end
+
   sprockets.append_path(File.join(SOURCE_DIR, 'javascript', 'ombulabs'))
   sprockets.append_path(File.join(SOURCE_DIR, 'stylesheets', 'ombulabs'))
   sprockets.append_gem_paths
