@@ -1,41 +1,68 @@
-#forms{
-	.form-error {
-	  color: $red;
-	  padding: 1rem 2rem;
-	  border: 2px solid $red;
-	  color: $black;
-	  text-align: left;
-	  margin: 1em 0;
-	  i {
-	    color: $yellow;
-	  }
-	}
+.form-error {
+  color: $red;
+  padding: 1rem 2rem;
+  border: 2px solid $red;
+  color: $black;
+  text-align: left;
+  margin: 1em 0;
+  i {
+    color: $yellow;
+  }
+}
 
-	.success-message{
-	  background-color: $green;
-	  color: $white;
-	  padding: 10px;
-	  height: 27px;
-	}
+.success-message{
+  background-color: $green;
+  color: $white;
+  padding: 10px;
+  min-height: 27px;
+}
 
-	.error-explanation{
-	  background-color: $red;
-	  color: $white;
-	  padding: 10px;
-	  height: 27px;
-	}
+.error-explanation{
+  background-color: $red;
+  color: $white;
+  padding: 10px;
+  min-height: 27px;
+}
 
-	.form-success{
-	  text-align: left;
-	  padding: 2rem;
-	  border: 2px solid $green;
-	  color: $black;
-	}
+.form-success{
+  text-align: left;
+  padding: 2rem;
+  border: 2px solid $green;
+  color: $black;
+}
 
-	#validation-box{
-	  width: 100%;
-	}
-	.mdl-textfield--floating-label, .mdl-textfield--floating-label.has-placeholder, .mdl-textfield--floating-label.is-dirty {
+#validation-box{
+  width: 100%;
+}
+
+.g-recaptcha {
+  margin-bottom: 1em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  div {
+    @include respond-above(sm) {
+      width: 100% !important;
+    }
+  }
+}
+
+form {
+  input, textarea {
+    padding: 0.25em;
+    padding-left: 0.5em;
+  }
+
+  textarea {
+    padding-top: 0.75em;
+  }
+}
+
+.form--material{
+  width: 100%;
+  .mdl-textfield--floating-label.has-placeholder, .mdl-textfield--floating-label.is-dirty {
     position: relative;
     width: 100%;
     .mdl-textfield__label{

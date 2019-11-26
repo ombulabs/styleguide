@@ -1,66 +1,79 @@
 //= require jquery
-//= require jquery_ujs
 //= require popper
+//= require bootstrap
+//= require material/mdlComponentHandler
+//= require material/rAF
+//= require material/textfield
+//= require material/slider
 
 $(document).ready(function(){
-    /**
-     * This part causes smooth scrolling using scrollto.js
-     * We target all a tags inside the nav, and apply the scrollto.js to it.
-     */
-    $(".hash-link").click(function(evn){
-        evn.preventDefault();
-        $('html,body').scrollTo(this.hash, this.hash);
-    });
 
-    $(".link").click(function(evn){
-        evn.preventDefault();
-    });
+	$('.carousel').carousel();
 
-    /**
-     * This part handles the highlighting functionality.
-     * We use the scroll functionality again, some array creation and
-     * manipulation, class adding and class removing, and conditional testing
-     */
-    var aChildren = $("#main-nav li").children(); // find the a children of the list items
-    var aArray = []; // create the empty aArray
-    for (var i=0; i < aChildren.length; i++) {
-        var aChild = aChildren[i];
-        var ahref = $(aChild).attr('href');
-        aArray.push(ahref);
-    } // this for loop fills the aArray with attribute href values
+	function carouselNormalization() {
+		var items = $('#carouselQuotes .item'), //grab all slides
+		    heights = [], //create empty array to store height values
+		    tallest; //create variable to make note of the tallest slide
 
-    $(window).scroll(function(){
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-        var windowHeight = $(window).height(); // get the height of the window
-        var docHeight = $(document).height();
+		if (items.length) {
+		    function normalizeHeights() {
+		        items.each(function() { //add heights to array
+								heights.push($(this).outerHeight());
+		        });
+		        tallest = Math.max.apply(null, heights); //cache largest value
+		        items.each(function() {
+		            $(this).css('min-height',tallest + 'px');
+		        });
+		    };
+		    normalizeHeights();
 
-        for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-            var divHeight = $(theID).height(); // get the height of the div in question
-            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                $("a[href='" + theID + "']").addClass("nav-active");
-            } else {
-                $("a[href='" + theID + "']").removeClass("nav-active");
-            }
-        }
+		    $(window).on('resize orientationchange', function () {
+		        tallest = 0, heights.length = 0; //reset vars
+		        items.each(function() {
+		            $(this).css('min-height','0'); //reset min-height
+		        }); 
+		        normalizeHeights(); //run it again 
+		    });
+		}
+	}
 
-        if(windowPos + windowHeight == docHeight) {
-            if (!$("#main-nav li:last-child a").hasClass("nav-active")) {
-                var navActiveCurrent = $(".nav-active").attr("href");
-                $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                $("#main-nav li:first-child a").addClass("nav-active");
-            }
-        }
-    });
+	carouselNormalization();
+    
+	$(".hash-link").click(function(event){
+			var hash = this.hash;
+			event.preventDefault();
+			$('html, body').animate({
+					scrollTop: $(hash).offset().top
+			}, 800);
+	});
 
-    $("#nav-button").click(function(){
-      $('#main-nav, #nav-button').toggleClass('open');
-      $('body').toggleClass('modal-active');
-    });
+	$(".link").click(function(evn){
+			evn.preventDefault();
+	});
 
-    $('#main-nav li a').click(function(){
-      $('#main-nav, #nav-button').removeClass('open');
-      $('body').removeClass('modal-active');
-    })
+	$('.navbar-toggler').click(function(){
+    $(this).toggleClass('open');
+    $('.styleguide-header').toggleClass('open');
+	});
+	
+	// Closes menu on mobile when clicking a menu item
+  $('.navbar-nav a').on('click', function() {
+    $('.navbar-toggler').removeClass('open');
+    $('.navbar-collapse').removeClass('in');
+    $('.navbar-toggler').addClass('collapsed');
+	})
+	
+	$(document).scroll(function(){
+
+		var scrollTop = $(document).scrollTop();
+		var windowWeight = $(document).innerWidth();
+
+    if(scrollTop > 0 && windowWeight < 768){
+      $('.styleguide-header').addClass('fixed');
+    }else{
+      $('.styleguide-header').removeClass('fixed');
+    }
+
+  })
+	
 });

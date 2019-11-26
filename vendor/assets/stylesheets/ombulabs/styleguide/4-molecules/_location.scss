@@ -1,0 +1,31 @@
+.section-location{
+  background-color: $grey;
+  color: $white;
+  padding: 13rem 1rem 6rem 1rem;
+  background-image: asset_url('bg-location-2.jpg');
+  background-position: 50% 53%;
+  margin: 3rem -1rem 0 -1rem;
+  @include respond-above(xs) {
+    background-position: 50% 53%;
+    background-image: asset_url('bg-location-2.jpg');
+    margin: 0;
+  }
+  @include respond-above(sm) {
+    background-image: asset_url('bg-location.jpg');
+    background-position: 50% 173%;
+    padding: 6rem 1rem;
+  }
+  @include respond-above(md) {
+    background-position: 60% 45%;
+  }
+  @include respond-above(lg) {
+    background-position: 60% 45%;
+  }
+  @include respond-above(xlg) {
+    background-position: 79% 47%;
+    background-size: 130%;
+  }
+  h2{
+    @include source-code-medium;
+  }
+}
