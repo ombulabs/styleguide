@@ -3,8 +3,6 @@
 	margin: 0 auto;
 	text-align: left;
 	.card{
-		border: none;
-		background: transparent;
 		.card-container{
 			position: relative;
 			padding: 0rem 0rem 0rem 1rem;
@@ -12,10 +10,6 @@
 			.card-header{
 				position: relative;
 				z-index: 3;
-				padding: 0;
-				margin: 0;
-				background-color: transparent;
-				border: none;
 			}
 			.btn-accordion{
 				text-align: left;

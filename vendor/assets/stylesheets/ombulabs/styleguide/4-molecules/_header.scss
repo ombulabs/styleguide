@@ -1,0 +1,154 @@
+header {
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	background-color: $white;
+	position: absolute;
+	top: 0;
+	height: 80px;
+	padding: 26px 50px;
+	box-shadow: 0 1px 11.5px 0 rgba($black, 0.18);
+  	@include respond-above(sm) {
+  		padding: 50px;
+		height: 160px;
+		background-color: transparent;
+		box-shadow: none;
+		.navbar-toggler{
+    		display: none;
+    	}
+  	}
+  	@include respond-above(lg) {
+  		padding: 50px 150px;
+  	}
+	&.fixed{
+		position: fixed;
+		box-shadow: 0 1px 11.5px 0 rgba(0, 0, 0, 0.18);
+		animation: showHeader .5s;
+		background-color: $white;
+		@include respond-above(sm) {
+			padding-top: 17px;
+	    	padding-bottom: 19px;
+			height: 100px;
+		}
+		@keyframes showHeader {
+			from {top: -100px;}
+			to {top: 0px;}
+		}
+	}
+	&.open{
+		&.fixed{
+			@include respond-below(sm) {
+	  			animation: none;
+	  		}
+		}
+	}
+	.navbar-nav{
+		float: right;
+		.btn-link{
+			margin-top: 1rem;
+			display: inline-block;
+			@include respond-above(sm) {
+		  		padding: 0 2rem 0 0;
+		  	}
+		  	@include respond-above(md) {
+		  		padding: 0 3rem 0 0;
+		  	}
+		}
+	}
+	.navbar-brand{
+  		padding: 0;
+  		height: 28px;
+  		margin-left: -30px;
+    	display: flex;
+    	@include respond-above(sm) {
+	  		height: 66px;
+	  		margin-left: 0;
+	  	}
+  	}
+  	.navbar-collapse{
+  		@include respond-below(sm) {
+	  		&.collapse.in, &.collapsing{
+	  			position: absolute;
+			    width: 100vw;
+			    left: -50px;
+			    height: 100vh;
+			    background-color: $white;
+			    top: 53px;
+			    .navbar-nav{
+			    	float: none;
+				    width: 200px;
+				    margin: 3rem auto;
+			    	a{
+			    		display: block;
+			    		&.btn-link{
+			    			padding: 1rem 0;
+			    		}
+			    		&.btn{
+			    			margin-top: 1rem;
+			    		}
+			    	}
+			    }
+	  		}
+  		}
+  	}
+  	.navbar-toggler{
+  		float: right;
+  		width: 30px;
+		height: 20px;
+		position: relative;
+		transform: rotate(0deg);
+		transition: $transition;
+		cursor: pointer;
+		border: none;
+		margin-top: 5px;
+		outline: none;
+		background: transparent;
+		span{
+			display: block;
+			position: absolute;
+			height: 4px;
+			width: 100%;
+			background: $red;
+			opacity: 1;
+			left: 0;
+			transform: rotate(0deg);
+			transition: $transition;
+			&:nth-child(1) {
+			  top: 0px;
+			}
+			&:nth-child(2), &:nth-child(3) {
+			  top: 8px;
+			}
+			&:nth-child(4) {
+			  top: 16px;
+			}
+		}
+		&.open{
+			span{
+				&:nth-child(1) {
+				  top: 8px;
+				  width: 0%;
+				  left: 50%;
+				}
+				&:nth-child(2) {
+				  -webkit-transform: rotate(45deg);
+				  -moz-transform: rotate(45deg);
+				  -o-transform: rotate(45deg);
+				  transform: rotate(45deg);
+				}
+				&:nth-child(3) {
+				  -webkit-transform: rotate(-45deg);
+				  -moz-transform: rotate(-45deg);
+				  -o-transform: rotate(-45deg);
+				  transform: rotate(-45deg);
+				}
+				&:nth-child(4) {
+				  top: 15px;
+				  width: 0%;
+				  left: 50%;
+				}
+			}
+		}
+  	}
+}
+

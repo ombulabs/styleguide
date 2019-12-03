@@ -1,0 +1,65 @@
+.member{
+  padding-bottom: 60px;
+  &:hover{
+    .member-photo{
+      .photo-box{
+        img{
+          &.photo-1{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .member-photo{
+    height: 160px;
+    width: 160px;
+    margin: 0 auto 2rem auto;
+    .photo-box{
+      border-radius: 30%;
+      display: block;
+      width: 160px;
+      height: 160px;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+      img{
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        &.photo-1{
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .member-data{
+    .member-links{
+      li{
+        display: inline;
+        a{
+          opacity: .5;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .member-description{
+      margin-top: 0.2em;
+      @include respond-above(sm) {
+        padding: 0 2rem;
+      }
+      h2{
+        margin: 0;
+      }
+      p{
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
+

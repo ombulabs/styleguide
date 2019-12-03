@@ -1,5 +1,6 @@
-// === VARIABLES
-// ==========================
+// Colors
+$green_light: #b5e0c3;
+$magenta: #ec037c;
 
 // New Colors
 $black: #222222;
@@ -9,6 +10,9 @@ $yellow: #fdca31;
 $green: #00d242;
 $grey: #323235;
 $light-grey: #dadada;
+
+// Measurements
+$image_isotype_height: 70px;
 
 // Typography:
 $font-source-code: "Source Code Pro", monospace;
@@ -20,4 +24,3 @@ $transition: all .2s ease-in;
 $breakpoint_500px: 500px;
 $breakpoint_768px: 768px;
 $breakpoint_960px: 960px;
-

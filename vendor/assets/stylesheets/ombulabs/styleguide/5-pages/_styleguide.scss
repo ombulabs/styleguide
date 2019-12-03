@@ -1,0 +1,220 @@
+.styleguide-page{
+    img{
+        max-width: 100%;
+    }
+    .navbar-section{
+        height: auto;
+        position: relative;
+        box-shadow: 5px 0px 11.5px -2px rgba($black, 0.18);
+        padding: 0;
+        @include respond-above(sm) {
+            height: 100vh;
+            position: fixed;
+            overflow: auto;
+    	}
+        header{
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            padding: 0px 20px 0 40px;
+            @include respond-above(sm) {
+                padding: 0;
+                position: relative;
+                height: auto;
+            }
+            .navbar-collapse{
+                &.collapsing{
+                    top: 50px;
+                }
+                &.collapse{
+                    padding-bottom: 30px;
+                    &.in{
+                        top: 50px;
+                    }
+                }
+            }
+            .navbar-toggler{
+                margin-top: 13px;
+                @include respond-above(sm) {
+                    margin-top: 0;
+                }
+            }
+        }
+        nav{
+            background-color: $white;
+            height: auto;
+            border: none;
+            @include respond-above(sm) {
+                height: 100vh;
+            }
+            .navbar-brand{
+                height: auto;
+                float: left;
+                width: auto;
+                display: block;
+                @include respond-above(md) {
+                    float: none;
+                    width: 100%;
+                }
+                img{
+                    max-width: 50px;
+                    @include respond-above(sm) {
+                        max-width: 70%;
+                    }
+                }
+            }
+            .navbar-nav{
+                float: none;
+            }
+            .nav-item{
+                padding: 0;
+                float: none;
+                text-align: center;
+                display: block;
+                @include respond-above(sm) {
+                    text-align: left;
+                }
+                a{ 
+                    color: $black;
+                    &:hover{
+                        background-color: transparent;
+                        color: $green;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .main-section{
+        padding: 20px 20px;
+        @include respond-above(sm) {
+            padding: 50px 60px;
+        }
+        background-color: $white;
+        .section{
+            margin: 0 0 3rem 0;
+            @include respond-above(sm) {
+                padding: 6rem 3rem;
+                margin: 0 1rem 3rem 1rem;
+            }
+            &#footer{
+                padding: 6rem 0;
+                margin: 0; 
+            }
+            &.top-section{
+                @include respond-below(xs) {
+                    padding-top: 110px;
+                }
+            }
+            &.section-yellow{
+                background-color: $yellow;
+            }
+            &.section-light-grey{
+                background-color: $light-grey;
+            }
+            &.section-grey{
+                background-color: $grey;
+            }
+            .styleguide-title{
+                @include source-code-black;
+            }
+            .section__content{
+                padding: 2rem 20px 3rem;
+            }
+            .light{
+                @include source-code-light;
+            }
+            .medium{
+                @include source-code-medium;
+            }
+            .bold{
+                @include source-code-black;
+            }
+            .green{
+                background-color: $green;
+                color: $white;
+            }
+            .yellow{
+                background-color: $yellow;
+                color: $black;
+            }
+            .black{
+                background-color: $black;
+                color: $white;
+            }
+            .red{
+                background-color: $red;
+                color: $white;
+            }
+            .grey{
+                background-color: $grey;
+                color: $white;
+            }
+            .grey-light{
+                background-color: $light-grey;
+                color: $black;
+            }
+            .white{
+                background-color: $white;
+                color: $black;
+                border: 1px solid $light-grey;
+            }
+            .btn-link{
+                padding: 0;
+            }
+            .btn{
+                border: none;
+            }
+            &.section-logo{
+                .logo{
+                    padding: 40px;
+                }
+                .logo__content{
+                    padding: 10% 0;
+                    height: 300px;
+                    align-content: center;
+                    display: grid;
+                    text-align: center;
+                    svg{
+                        max-width: 300px;
+                        margin: 0 auto;
+                    }
+                    &.logo_content--small{
+                        height: 150px;
+                        font-size: 2rem;
+                        grid-template-columns: 95px 195px;
+                        grid-column-gap: 20px;
+                        margin: 0 auto;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: left;
+                        letter-spacing: -0.5px;
+                        line-height: 1;
+                        &.logo_content--product{
+                            .logo_iso__content{
+                                display: grid;
+                                grid-template-rows: 22px auto;
+                                .logo_iso{
+                                    font-size: 1.2rem;
+                                    color: $grey;
+                                    opacity: .5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-colors{
+                .color{
+                    padding: 30px 0;
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
