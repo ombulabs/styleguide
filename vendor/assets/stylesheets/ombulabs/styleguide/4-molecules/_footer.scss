@@ -5,7 +5,7 @@ footer {
 	text-align: center;
 	padding-top: 5rem ;
 	padding-bottom: 10px;
-  	overflow: hidden;
+  overflow: hidden;
 	.logo-footer a{
 		color: $white
 	}
@@ -76,7 +76,7 @@ footer {
 			display: block;
 			text-decoration: underline;
 			padding: 2px 0;
-			color: lighten($grey, 30%);
+			color: lighten($grey, 50%);
 			&:hover{
 				color: $green;
 			}
