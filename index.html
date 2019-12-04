@@ -6,7 +6,7 @@
     <script src="javascript/jquery.scrollto.js"></script>
     <script src="javascript/main.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -20,6 +20,7 @@
       <li><a href="#typography" title="Typography">Typography</a></li>
       <li><a href="#links-buttons" title="Links & Buttons">Links & Buttons</a></li>
       <li><a href="#forms" title="Forms">Forms</a></li>
+      <li><a href="#flash" title="Flash">Flash Messages</a></li>
       <li><a href="#icons" title="Icons">Icons</a></li>
     </ul>
     <section id="page-wrapper">
@@ -104,23 +105,41 @@
 
         </div>
 
+        <div id="flash">
+          <h2>Flash Messages</h2>
+          <h3>Error</h3>
+          <div class="flash-message flash-error"><p><i class="fa fa-exclamation-circle"></i> Flash Error Message</p></div>
+          
+          <h3>Warning</h3>
+          <div class="flash-message flash-warning"><p><i class="fa fa-exclamation-triangle"></i> Flash Warning Message</p></div>
+
+          <h3>Success</h3>
+          <div class="flash-message flash-success"><p><i class="fa fa-check-circle"></i> Flash Success Message</p></div>
+
+          <h3>Information</h3>
+          <div class="flash-message flash-info"><p><i class="fa fa-info-circle"></i> Flash Information Message</p></div>
+          
+        </div>
+
         <div id="icons">
           <h2>Icons</h2>
           <ul>
             <li><i class="fa fa-star"></i><span>.fa-star</span></li>
-            <li><i class="fa fa-clock-o"></i><span>.fa-clock-o</span></li>
+            <li><i class="fas fa-clock"></i><span>.fa-clock-o</span></li>
             <li><i class="fa fa-flask"></i><span>.fa-flask</span></li>
-            <li><i class="fa fa-comments-o"></i><span>.fa-comments-o</span></li>
+            <li><i class="fas fa-comments"></i><span>.fa-comments-o</span></li>
             <li><i class="fa fa-users"></i><span>.fa-users</span></li>
-            <li><i class="fa fa-pencil"></i><span>.fa-pencil</span></li>
-            <li><i class="fa fa-twitter"></i><span>.fa-twitter</span></li>
-            <li><i class="fa fa-github"></i><span>.fa-github</span></li>
-            <li><i class="fa fa-linkedin"></i><span>.fa-linkedin</span></li>
-            <li><i class="fa fa-dribbble"></i><span>.fa-dribbble</span></li>
+            <li><i class="fa fa-pencil-alt"></i><span>.fa-pencil</span></li>
+            <li><i class="fab fa-twitter"></i><span>.fa-twitter</span></li>
+            <li><i class="fab fa-github"></i><span>.fa-github</span></li>
+            <li><i class="fab fa-linkedin"></i><span>.fa-linkedin</span></li>
+            <li><i class="fab fa-dribbble"></i><span>.fa-dribbble</span></li>
             <li><i class="fa fa-slideshare"></i><span>.fa-slideshare</span></li>
           </ul>
         </div>
+
       </div>
+
     </section>
   </body>
 </html>
