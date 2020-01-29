@@ -170,6 +170,24 @@ input:focus, select:focus, textarea:focus {
   padding: 20px;
   margin-top: 20px; }
 
+.flash-message {
+  padding: 10px 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 24px;
+  display: inline-block; }
+  .flash-message.flash-error {
+    background: #F70A7C;
+    color: #ffffff; }
+  .flash-message.flash-warning {
+    background: #FFCC00; }
+  .flash-message.flash-success {
+    background: #57CE81;
+    color: #ffffff; }
+  .flash-message.flash-info {
+    background: #D9F1F1;
+    color: #000000; }
+
 #nav-button {
   display: none;
   position: fixed;
