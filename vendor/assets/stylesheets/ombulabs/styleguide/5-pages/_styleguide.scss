@@ -95,7 +95,7 @@
         .section{
             margin: 0 0 3rem 0;
             @include respond-above(sm) {
-                padding: 6rem 3rem;
+                padding: 4rem 0rem;
                 margin: 0 1rem 3rem 1rem;
             }
             &#footer{
@@ -207,6 +207,11 @@
                             }
                         }
                     }
+                }
+            }
+            &.section-code{
+                .section__content{
+                    text-align: left;
                 }
             }
             &.section-colors{

@@ -47,6 +47,12 @@
                                     <a class="hash-link nav-link" href="#forms" title="Forms">Forms</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="hash-link nav-link" href="#code" title="Code">Code Blocks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hash-link nav-link" href="#audit" title="Audit Block">Audit Block</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="hash-link nav-link" href="#accordion" title="Accordion">Accordion</a>
                                 </li>
                                 <li class="nav-item">
@@ -112,7 +118,7 @@
                     <h2 class="styleguide-title">Logo</h2>
                     <div class="section__content">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6 logo">
+                            <div class="col-sm-12 col-md-12 col-lg-6 logo">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h3>Logo without background</h3>
@@ -136,7 +142,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 logo">
+                            <div class="col-sm-12 col-md-12 col-lg-6 logo">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h3>Logo with background</h3>
@@ -162,7 +168,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 logo">
+                            <div class="col-sm-12 col-md-12 col-lg-6 logo">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h3>Logo with background & name</h3>
@@ -191,7 +197,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 logo">
+                            <div class="col-sm-12 col-md-12 col-lg-6 logo">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h3>Logo with brand & name</h3>
@@ -218,7 +224,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 logo">
+                            <div class="col-sm-12 col-md-12 col-lg-6 logo">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <h3>Logo for product name</h3>
@@ -330,7 +336,6 @@
                     </div>
                 </div>
 
-
                 <div id="forms" class="section section-forms">
                     <h2 class="styleguide-title">Forms</h2>
                     <div class="section__content form--material">
@@ -387,6 +392,76 @@
                     </div>
                 </div>
 
+                <div id="code" class="section section-code">
+                    <h2 class="styleguide-title">Code block</h2>
+                    <div class="section__content">
+<pre><code>class UserController < ApplicationController
+    def index
+        render "index"
+    end
+end</code></pre>          
+                    </div>
+                </div>
+
+                <div id="audit" class="section section-audit">
+                    <h2 class="styleguide-title">Audit blocks</h2>
+                    <div class="section__content">
+                        <div class="results-content advisories-content">
+                            <div class="advisory-gem">
+                                <h2>Vulnerable Gem: ACTIONVIEW@4.1.16</h2>
+                            </div>
+                          
+                            <div class="row advisory-info">
+                          
+                              <div class="col-xs-6 col-sm-3">
+                                <p class="advisory-info__label">Name:</p>
+                                <p>actionview</p>
+                              </div>
+                          
+                              <div class="col-xs-6 col-sm-3">
+                                <p class="advisory-info__label">Version:</p>
+                                <p>4.1.16</p>
+                              </div>
+                          
+                              <div class="col-xs-6 col-sm-3">
+                                <p class="advisory-info__label">ID:</p>
+                                <p>CVE-2016-6316</p>
+                              </div>
+                          
+                              <div class="col-xs-6 col-sm-3">
+                                <a class="btn" href="https://groups.google.com/forum/#!topic/rubyonrails-security/I-VWr034ouk" target="_blank">Link</a>
+                              </div>
+                          
+                            </div>
+                          
+                            <div class="advisory-title">
+                              <h2>Possible XSS Vulnerability in Action View</h2>
+                            </div>
+                          
+                            <div class="advisory-description">
+                              <div class="advisory-description-content">
+                                <h2>Description:</h2>
+                                <p>here is a possible XSS vulnerability in Action View. Text declared as "HTML safe" will not have quotes escaped when used as attribute values in tag helpers.
+                                <h2>IMPACT</h2>
+                                <p>Text declared as "HTML safe" when passed as an attribute value to a tag helper will not have quotes escaped which can lead to an XSS attack. Impacted code looks something like this:</p>
+                          
+<pre><code>content_tag(:div, "hi", title: user_input.html_safe)</code></pre>
+                                
+                                <p>Some helpers like the sanitize helper will automatically mark strings as "HTML safe", so impacted code could also look something like this:</p>
+                          
+<pre><code>class UserController < ApplicationController
+    def index
+        render "index"
+    end
+end</code></pre>
+                                
+                                <p>All users running an affected release should either upgrade or use one of the workarounds immediately.</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                    </div>
+                </div>
 
                 <div id="accordion" class="section">
                     <h2 class="styleguide-title">Accordion</h2>
