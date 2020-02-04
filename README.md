@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ombulabs-styleguide'
+gem 'fastruby-styleguide'
 ```
 
 And then execute:
@@ -14,25 +14,25 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ombulabs-styleguide
+    $ gem install fastruby-styleguide
 
 ## Usage
 
 In application.css, add:
 
 ```ruby
-*= require ombulabs/styleguide
+*= require fastruby/styleguide
 ```
 
 or if you are using scss: appliation.scss
 
 ```ruby
-@import "ombulabs/styleguide";
+@import "fastruby/styleguide";
 ```
 
 In application.js add:
 ```ruby
-//= require ombulabs/styleguide
+//= require fastruby/styleguide
 ```
 
 ## Static generation
@@ -40,11 +40,11 @@ In application.js add:
 From the gem folder
 
     $ bundle
-    
+
 Build static
 
     $ rake precompile_assets
-    
+
 Styles and Javascript files are in `static` folder.
 
 Components can be checked if `index.html` file is opened in a browser.

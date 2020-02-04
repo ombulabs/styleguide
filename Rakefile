@@ -25,8 +25,8 @@ task :precompile_assets do
     end
   end
 
-  sprockets.append_path(File.join(SOURCE_DIR, 'javascript', 'ombulabs'))
-  sprockets.append_path(File.join(SOURCE_DIR, 'stylesheets', 'ombulabs'))
+  sprockets.append_path(File.join(SOURCE_DIR, 'javascript', 'fastruby'))
+  sprockets.append_path(File.join(SOURCE_DIR, 'stylesheets', 'fastruby'))
   sprockets.append_gem_paths
 
   BUNDLES.each do |bundle|
