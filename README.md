@@ -1,4 +1,4 @@
-# Ombulabs::Styleguide
+# FastRuby::Styleguide
 
 ## Ruby on Rails Installation
 
