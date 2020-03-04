@@ -1,1 +1,9 @@
 .sass-cache
+*.gem
+.bundle
+Gemfile.lock
+.DS_Store
+*~
+.ruby-version
+.ruby-gemset
+.idea/
