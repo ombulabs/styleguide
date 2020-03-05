@@ -1,5 +1,4 @@
-
-# Ombulabs::Styleguide
+# Ombulabs::StyleGuide
 
 ## Ruby on Rails Installation
 
