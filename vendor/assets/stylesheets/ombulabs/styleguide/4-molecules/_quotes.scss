@@ -1,0 +1,167 @@
+/* === QUOTES */
+/* ========================== */
+
+// Imports:
+@import "bourbon";
+@import "variables";
+
+.testimonials{
+	background-color: #D9F1F1;
+	text-align: left;
+	padding: 100px 0;
+	h3{
+		max-width: 80%;
+		margin: auto;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.carousel{
+		position: relative;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.nav-arrow{
+		position: absolute;
+		top: -20px;
+		&.prev-arrow{
+			right: 65px;
+			a{
+				padding-right: 4px;
+			}
+		}
+		&.next-arrow{
+			right: 0;
+			a{
+				padding-left: 4px;
+			}
+		}
+		a{
+			background-color: $light_grey;
+			color: $black;
+			width: 55px;
+			height: 55px;
+			border-radius: 55px;
+			display: inline-block;
+			text-align: center;
+			padding: 17px 0;
+			font-weight: bold;
+			transition: all 0.2s ease-in;
+			&:hover{
+				background-color: $black;
+				color: $light_grey;
+				transition: all 0.2s ease-in;
+			}
+		}
+	}
+	.bx-wrapper{
+		background: none;
+		border: 0;
+		box-shadow: none;
+		margin: auto;
+		.slider{
+			div{
+				color: $slogan_grey;
+				.tall-logo{
+					display: inline-block;
+					height: 50px;
+				}
+				.client-logo{
+					display: inline-block;
+					margin-bottom: 5px;
+					height: 20px;
+				}
+				.quote{
+					background-color: $white;
+					margin: 40px 0 20px 0;
+					background-color: $white;
+					border-radius: 4px;
+					padding: 20px;
+				}
+				p{
+					margin-top: 10px;
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.client{
+					font-size: 14px;
+					text-transform: uppercase;
+					line-height: 50px;
+					position: relative;
+					span{
+						text-transform: lowercase;
+					}
+					img{
+						float: left;
+						margin-right: 15px;
+					}
+					&:before{
+						content: "\f0d7";
+						font-family: 'FontAwesome';
+						color: $white;
+						font-size: 28px;
+						position: absolute;
+						top: -42px;
+						left: 15px;
+					}
+				}
+			}
+		}
+		.bx-pager{
+			text-align: right;
+			top: -30px;
+			height: 30px;
+			&.bx-default-pager a{
+				background-color: $white;
+				&:hover, &:focus, &.active{
+					background-color: $medium_grey;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:$breakpoint_768px){
+	.testimonials {
+		.bx-wrapper {
+			.bx-pager{
+				text-align: center;
+			}
+		}
+	}
+	.bx-viewport{
+		overflow: initial !important;
+		height: 550px !important;
+	}
+}
+
+@media screen and (max-width:$breakpoint_500px){
+	.testimonials {
+		.bx-wrapper {
+			ul{
+				li{
+					.client{
+						text-align: center;
+						a{
+							position: relative;
+							top:-40px;
+							line-height: 20px;
+							display: block;
+							img{
+								float: none;
+								margin: auto;
+								margin-bottom: 10px;
+							}
+						}
+						&:before{
+							display: inline-block;
+							margin: auto;
+							position: relative;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

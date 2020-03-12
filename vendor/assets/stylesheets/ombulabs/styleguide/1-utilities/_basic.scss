@@ -1,0 +1,24 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #000;
+	background: #fff;
+}
+::selection {
+  background: $orange;
+}
+::-moz-selection {
+  background: $orange;
+}
+
+.hidden {
+	display:none;
+}
+
+abbr{
+	text-decoration: none;
+}

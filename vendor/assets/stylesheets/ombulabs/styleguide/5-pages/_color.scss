@@ -1,0 +1,55 @@
+#color #color-samples{
+  margin-bottom: 30px;
+  overflow: hidden;
+  li{
+    width: 31%;
+    float: left;
+    min-height: 235px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 1% 2% 1% 0;
+    &.light-green{
+      background: $light-green;
+    }
+    &.green{
+      background-color: $green;
+    }
+    &.orange{
+      background-color: $orange;
+    }
+    &.white{
+      background-color: $white;
+    }
+    &.magenta{
+      background-color: $magenta;
+    }
+    &.dark-grey{
+      background-color: $dark_grey;
+    }
+    &.light-grey{
+      background-color: $light_grey;
+    }
+    &.black{
+      background-color: $black;
+    }
+  }
+  p{
+    background-color: $white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    top:150px;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 16px;
+    border-top: 1px solid $light_grey;
+    span{
+      display: block;
+    }
+  }
+}

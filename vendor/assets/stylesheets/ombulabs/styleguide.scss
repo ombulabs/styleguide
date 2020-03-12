@@ -1,3 +1,8 @@
+/******************************
+****OMBULABS STYLEGUIDE GEM****
+******* application css *******
+******************************/
+
 // Material
 @import "material/variables";
 @import "material/mixins";
@@ -9,12 +14,28 @@
 // Bootstrap
 @import "bootstrap";
 
-@import 'styleguide/reset';
-@import 'styleguide/variables';
-@import 'styleguide/responsive';
-@import 'styleguide/base';
-@import 'styleguide/nav';
-@import 'styleguide/logo';
-@import 'styleguide/color';
-@import 'styleguide/typography';
-@import 'styleguide/buttons';
+// 1-utilities
+@import 'styleguide/1-utilities/reset';
+@import 'styleguide/1-utilities/breakpoints';
+@import 'styleguide/1-utilities/variables';
+@import 'styleguide/1-utilities/basic';
+@import 'styleguide/1-utilities/grid';
+
+// 2-quarks
+@import 'styleguide/2-quarks/typography';
+@import 'styleguide/2-quarks/links';
+@import 'styleguide/2-quarks/icons';
+
+// 3-atoms
+@import "styleguide/3-atoms/buttons";
+@import "styleguide/3-atoms/forms";
+
+// 4-molecules
+@import "styleguide/4-molecules/floors";
+@import "styleguide/4-molecules/footer";
+@import "styleguide/4-molecules/header";
+@import "styleguide/4-molecules/popups";
+@import "styleguide/4-molecules/quotes";
+
+// 5-pages
+@import "styleguide/5-pages/styleguide";
