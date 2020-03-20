@@ -1,0 +1,53 @@
+/* === LOGO */
+/* ========================== */
+
+.logo {
+	background-image: asset-url($image_isotype_animated);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 260px;
+	height: $image_isotype_height;
+	@include font-lato-bold;
+	font-style: normal;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 70px;
+	background-size: auto 80%;
+	padding-top: 10px;
+  a{
+		color: $black;
+	}
+	@include respond-below(lg) {
+    color: $white;
+	}
+	@include respond-below(xs) {
+    width: auto;
+		font-size: 24px;
+		height: 60px;
+		padding-left: 54px;
+		padding-top: 6px;
+	}
+}
+
+.slogan {
+	@include font-open-sans-light;
+	font-size: 14px;
+	color: $black;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	margin-top: -32px;
+  float: left;
+  margin-left: 72px;
+	text-shadow: $slogan_grey 0 0 0;
+	line-height: 1.4;
+	@include respond-below(lg) {
+    color: $orange;
+	}
+	@include respond-below(xs) {
+    margin-left: 55px;
+		font-size: 12px;
+		margin-top: -24px;
+	}
+}

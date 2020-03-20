@@ -2,23 +2,20 @@
 /* ========================== */
 
 .row {
-  //margin-left: -$gutter/2;
   margin-left: auto;
-  //margin-right: -$gutter/2;
   margin-right: auto;
   max-width: $breakpoint_1200px;
   &:before {
-    // Magic learned from Bootstrap
     content: " ";
     display: table;
   }
   &:after {
-    // Magic learned from Bootstrap
     content: " ";
     display: table;
     clear: both;
   }
 }
+
 .column {
   position: relative;
   min-height: 1px;
@@ -31,6 +28,7 @@
 .column-force-first {
   clear: left;
 }
+
 .column-force-last {
   clear: right;
 }
@@ -38,24 +36,26 @@
 .column-half {
   @extend .column;
   width: 50%;
-  @media screen and (max-width: $breakpoint_768px) {
+  @include respond-below(sm) {
     width: 100%;
   }
 }
+
 .column-third {
   @extend .column;
   width: 33.3333333333%;
-  @media screen and (max-width: $breakpoint_768px) {
+  @include respond-below(sm) {
     width: 100%;
   }
 }
+// 
 .column-quarter {
   @extend .column;
   width: 25%;
-  @media screen and (max-width: $breakpoint_1200px) {
+  @include respond-below(lg) {
     width: 50%;
   }
-  @media screen and (max-width: $breakpoint_768px) {
+  @include respond-below(sm) {
     width: 100%;
   }
 }
@@ -70,6 +70,7 @@
   max-width: $breakpoint_1200px;
   margin: 0 auto;
 }
+
 .full-width {
   width: auto;
   margin: 0;

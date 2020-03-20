@@ -1,3 +1,6 @@
+/* === BUTTONS */
+/* ========================== */
+
 .button, input.button {
 	display: inline-block;
 	text-align: center;
@@ -10,16 +13,6 @@
 
 	&:hover, &:active{
 		background-color: lighten($orange, 10%);
-	}
-}
-
-#contact-us-popup .button {
-	display: block;
-	background: #fff;
-	color: $magenta;
-	margin: 20px auto 0;
-	width: 60%;
-	&:hover {
-		color: saturate($magenta, 10%);
+		text-decoration: none;
 	}
 }

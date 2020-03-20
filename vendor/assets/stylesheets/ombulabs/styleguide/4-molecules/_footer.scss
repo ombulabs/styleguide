@@ -1,10 +1,6 @@
 /* === FOOTER */
 /* ========================== */
 
-// Imports:
-@import "bourbon";
-@import "variables";
-
 footer {
 	background: #000;
 	color: #fff;
@@ -13,12 +9,14 @@ footer {
 	padding-top: $gutter*1.5;
 	padding-bottom: $gutter*1.5;
   overflow: hidden;
-	.logo a{
-		color: $white
-	}
 	.logo-container{
 		width: 260px;
 		margin: auto;
+		.logo{
+			a{
+				color: $white
+			}
+		}
 		.slogan{
 			color: $white;
 		}
@@ -28,19 +26,12 @@ footer {
 			padding: 0 10px;
 			font-size: 12px;
 			color: lighten($slogan_grey, 30%);
-			&:hover{
-				color: $orange;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $breakpoint_500px){
-	footer{
-		.menu {
-			a{
+			@include respond-below(xs) {
 				display: block;
 				margin: 10px 0;
+			}
+			&:hover{
+				color: $orange;
 			}
 		}
 	}

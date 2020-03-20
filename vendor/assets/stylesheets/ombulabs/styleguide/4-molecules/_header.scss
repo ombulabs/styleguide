@@ -1,11 +1,6 @@
 /* === HEADER */
 /* ========================== */
 
-// Imports:
-@import "bourbon";
-@import "variables";
-@import "2-quarks/custom_typography";
-
 header {
 	text-align: center;
 	color: $black;
@@ -15,6 +10,12 @@ header {
   z-index: 1000;
 	position: fixed;
 	transition: all 0.2s ease-in;
+	@include respond-below(lg) {
+		background-color: $black;
+	}
+	@include respond-below(xs) {
+		padding: 5px 10px;
+	}
 	&.fixed{
 		background-color: $black;
 		color: $white;
@@ -44,95 +45,7 @@ header {
 		}
 		#mobile-menu{
 			display: none;
-		}
-    nav{
-      float: right;
-			margin-top: 25px;
-			li{
-				display: inline;
-			}
-      a{
-        color: $black;
-        font-size: 16px;
-        padding: 0px 8px;
-        &:hover{color: $orange}
-      }
-			#contact{
-				background-color: $orange;
-				color: $black;
-				padding: 10px 20px;
-				border-radius: 20px;
-				&:hover{
-					background-color: lighten($orange, 10%);
-				}
-			}
-    }
-  }
-}
-.logo {
-	background-image: asset-url($image_isotype_animated);
-	background-repeat: no-repeat;
-	background-position: left center;
-	width: 260px;
-	height: $image_isotype_height;
-	@include font-lato-bold;
-	font-style: normal;
-	font-size: 30px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	text-align: left;
-	padding-left: 70px;
-	background-size: auto 80%;
-	padding-top: 10px;
-  a{
-		color: $black;
-	}
-}
-.slogan {
-	@include font-open-sans-light;
-	font-size: 14px;
-	color: $black;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	margin-top: -32px;
-  float: left;
-  margin-left: 72px;
-	text-shadow: $slogan_grey 0 0 0;
-}
-#choose-lang {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: .7em;
-	padding: 10px;
-	a {
-		color: #fff;
-		text-decoration: none;
-		text-transform: uppercase;
-		letter-spacing: .3em;
-		display: inline-block;
-		padding: 5px;
-		transition: $hover_transition_time;
-		transition-property: background, color;
-		&:hover {
-			color: #000;
-			background: #fff;
-		}
-	}
-}
-@media screen and (max-width: $breakpoint_1200px){
-  header{
-		background-color: $black;
-    #navbar{
-			.logo-container a{
-				.logo{
-					color: $white;
-				}
-				.slogan{
-					color: $orange;
-				}
-			}
-			#mobile-menu{
+			@include respond-below(lg) {
 				display: block;
 				position: absolute;
 				right: 20px;
@@ -140,7 +53,31 @@ header {
 				line-height: 76px;
 				color: $orange;
 			}
-		  nav{
+			@include respond-below(xs) {
+				line-height: 60px;
+			}
+		}
+    nav{
+      float: right;
+			margin-top: 25px;
+      a{
+        color: $black;
+        font-size: 16px;
+        padding: 0px 8px;
+				&:hover{
+					color: $orange
+				}
+				&#contact{
+					background-color: $orange;
+					color: $black;
+					padding: 10px 20px;
+					border-radius: 20px;
+					&:hover{
+						background-color: lighten($orange, 10%);
+					}
+				}
+			}
+			@include respond-below(lg) {
 				display: none;
 				&.active{
 					position: absolute;
@@ -172,14 +109,7 @@ header {
 					}
 				}
 			}
-	  }
-  }
-}
-@media screen and (max-width: $breakpoint_500px){
-  header{
-	  padding: 5px 10px;
-		#navbar{
-			nav {
+			@include respond-below(xs) {
 				&.active{
 					top:70px;
 				}
@@ -188,22 +118,6 @@ header {
 					padding: 5px 0px;
 				}
 			}
-
-			#mobile-menu{
-				line-height: 60px;
-			}
-		}
-		.logo{
-			width: auto;
-			font-size: 24px;
-			height: 60px;
-			padding-left: 54px;
-			padding-top: 6px;
-		}
-		.slogan{
-			margin-left: 55px;
-			font-size: 12px;
-			margin-top: -24px;
-		}
+    }
   }
 }

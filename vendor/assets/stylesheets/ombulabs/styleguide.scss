@@ -3,16 +3,12 @@
 ******* application css *******
 ******************************/
 
-// Material
-@import "material/variables";
-@import "material/mixins";
-@import "material/resets";
-@import "material/typography";
-@import "material/textfield";
-@import "material/slider";
+// Google Web Fonts
+@import 'https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:300,300i,400,400i,700,700i&display=swap';
 
-// Bootstrap
-@import "bootstrap";
+// Font Awesome
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 // 1-utilities
 @import 'styleguide/1-utilities/reset';
@@ -27,14 +23,14 @@
 @import 'styleguide/2-quarks/icons';
 
 // 3-atoms
+@import "styleguide/3-atoms/logo";
 @import "styleguide/3-atoms/buttons";
 @import "styleguide/3-atoms/forms";
 
 // 4-molecules
-@import "styleguide/4-molecules/floors";
+@import "styleguide/4-molecules/sections";
 @import "styleguide/4-molecules/footer";
 @import "styleguide/4-molecules/header";
-@import "styleguide/4-molecules/popups";
 @import "styleguide/4-molecules/quotes";
 
 // 5-pages

@@ -1,10 +1,6 @@
 /* === QUOTES */
 /* ========================== */
 
-// Imports:
-@import "bourbon";
-@import "variables";
-
 .testimonials{
 	background-color: #D9F1F1;
 	text-align: left;
@@ -24,7 +20,7 @@
 	}
 	.nav-arrow{
 		position: absolute;
-		top: -20px;
+		top: 70px;
 		&.prev-arrow{
 			right: 65px;
 			a{
@@ -60,84 +56,7 @@
 		border: 0;
 		box-shadow: none;
 		margin: auto;
-		.slider{
-			div{
-				color: $slogan_grey;
-				.tall-logo{
-					display: inline-block;
-					height: 50px;
-				}
-				.client-logo{
-					display: inline-block;
-					margin-bottom: 5px;
-					height: 20px;
-				}
-				.quote{
-					background-color: $white;
-					margin: 40px 0 20px 0;
-					background-color: $white;
-					border-radius: 4px;
-					padding: 20px;
-				}
-				p{
-					margin-top: 10px;
-					font-size: 16px;
-					line-height: 24px;
-				}
-				.client{
-					font-size: 14px;
-					text-transform: uppercase;
-					line-height: 50px;
-					position: relative;
-					span{
-						text-transform: lowercase;
-					}
-					img{
-						float: left;
-						margin-right: 15px;
-					}
-					&:before{
-						content: "\f0d7";
-						font-family: 'FontAwesome';
-						color: $white;
-						font-size: 28px;
-						position: absolute;
-						top: -42px;
-						left: 15px;
-					}
-				}
-			}
-		}
-		.bx-pager{
-			text-align: right;
-			top: -30px;
-			height: 30px;
-			&.bx-default-pager a{
-				background-color: $white;
-				&:hover, &:focus, &.active{
-					background-color: $medium_grey;
-				}
-			}
-		}
-	}
-}
-@media screen and (max-width:$breakpoint_768px){
-	.testimonials {
-		.bx-wrapper {
-			.bx-pager{
-				text-align: center;
-			}
-		}
-	}
-	.bx-viewport{
-		overflow: initial !important;
-		height: 550px !important;
-	}
-}
-
-@media screen and (max-width:$breakpoint_500px){
-	.testimonials {
-		.bx-wrapper {
+		@include respond-below(xs) {
 			ul{
 				li{
 					.client{
@@ -160,6 +79,74 @@
 							left: 0;
 						}
 					}
+				}
+			}
+		}
+		.bx-viewport{
+			.slider{
+				div{
+					color: $slogan_grey;
+					.tall-logo{
+						display: inline-block;
+						height: 50px;
+					}
+					.client-logo{
+						display: inline-block;
+						margin-bottom: 5px;
+						height: 20px;
+					}
+					.quote{
+						background-color: $white;
+						margin: 40px 0 20px 0;
+						background-color: $white;
+						border-radius: 4px;
+						padding: 20px;
+					}
+					p{
+						margin-top: 10px;
+						font-size: 16px;
+						line-height: 24px;
+					}
+					.client{
+						font-size: 14px;
+						text-transform: uppercase;
+						line-height: 50px;
+						position: relative;
+						span{
+							text-transform: lowercase;
+						}
+						img{
+							float: left;
+							margin-right: 15px;
+						}
+						&:before{
+							content: "\f0d7";
+							font-family: 'FontAwesome';
+							color: $white;
+							font-size: 28px;
+							position: absolute;
+							top: -42px;
+							left: 15px;
+						}
+					}
+				}
+			}
+			@include respond-below(sm) {
+				overflow: initial !important;
+				height: 550px !important;
+			}
+		}	
+		.bx-pager{
+			text-align: right;
+			top: -30px;
+			height: 30px;
+			@include respond-below(sm) {
+				text-align: center;
+			}
+			&.bx-default-pager a{
+				background-color: $white;
+				&:hover, &:focus, &.active{
+					background-color: $medium_grey;
 				}
 			}
 		}
