@@ -12,27 +12,23 @@ footer {
 	.logo-container{
 		width: 260px;
 		margin: auto;
-		.logo{
-			a{
-				color: $white
-			}
+		.logo a{
+			color: $white
 		}
 		.slogan{
 			color: $white;
 		}
 	}
-	.menu{
-		a{
-			padding: 0 10px;
-			font-size: 12px;
-			color: lighten($slogan_grey, 30%);
-			@include respond-below(xs) {
-				display: block;
-				margin: 10px 0;
-			}
-			&:hover{
-				color: $orange;
-			}
+	.menu a{
+		padding: 0 10px;
+		font-size: 12px;
+		color: lighten($slogan_grey, 30%);
+		@include respond-below(extra-small) {
+			display: block;
+			margin: 10px 0;
+		}
+		&:hover{
+			color: $orange;
 		}
 	}
 }

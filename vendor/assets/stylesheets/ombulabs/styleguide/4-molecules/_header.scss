@@ -10,28 +10,24 @@ header {
   z-index: 1000;
 	position: fixed;
 	transition: all 0.2s ease-in;
-	@include respond-below(lg) {
+	@include respond-below(large) {
 		background-color: $black;
 	}
-	@include respond-below(xs) {
+	@include respond-below(extra-small) {
 		padding: 5px 10px;
 	}
 	&.fixed{
 		background-color: $black;
 		color: $white;
 		#navbar{
-			.logo-container a{
-				.logo{
-					color: $white;
-				}
-				.slogan{
-					color: $orange;
-				}
+			.logo-container a .logo{
+				color: $white;
 			}
-			nav{
-				a{
-					color: $white;
-				}
+			.slogan{
+				color: $orange;
+			}
+			nav a{
+				color: $white;
 			}
 		}
 	}
@@ -45,7 +41,7 @@ header {
 		}
 		#mobile-menu{
 			display: none;
-			@include respond-below(lg) {
+			@include respond-below(large) {
 				display: block;
 				position: absolute;
 				right: 20px;
@@ -53,7 +49,7 @@ header {
 				line-height: 76px;
 				color: $orange;
 			}
-			@include respond-below(xs) {
+			@include respond-below(extra-small) {
 				line-height: 60px;
 			}
 		}
@@ -77,7 +73,7 @@ header {
 					}
 				}
 			}
-			@include respond-below(lg) {
+			@include respond-below(large) {
 				display: none;
 				&.active{
 					position: absolute;
@@ -109,7 +105,7 @@ header {
 					}
 				}
 			}
-			@include respond-below(xs) {
+			@include respond-below(extra-small) {
 				&.active{
 					top:70px;
 				}

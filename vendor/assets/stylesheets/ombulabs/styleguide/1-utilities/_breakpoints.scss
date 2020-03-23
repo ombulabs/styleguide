@@ -4,11 +4,11 @@
 
 // A map of breakpoints.
 $breakpoints: (
-  xs: 576px,
-  sm: 768px,
-  md: 992px,
-  lg: 1200px,
-  xlg: 1600px
+  extra-small: 576px,
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+  extra-large: 1600px
 );
 
 
@@ -16,7 +16,7 @@ $breakpoints: (
 //  RESPOND ABOVE
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// @include respond-above(sm) {}
+// @include respond-above(small) {}
 @mixin respond-above($breakpoint) {
 
   // If the breakpoint exists in the map.
@@ -29,13 +29,8 @@ $breakpoints: (
     @media (min-width: $breakpoint-value) {
       @content;
     }
-  
-  // If the breakpoint doesn't exist in the map.
-  } @else {
 
-    // Log a warning.
-    @warn 'Invalid breakpoint: #{$breakpoint}.';
-  }
+  } 
 }
 
 
@@ -43,7 +38,7 @@ $breakpoints: (
 //  RESPOND BELOW
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// @include respond-below(sm) {}
+// @include respond-below(small) {}
 @mixin respond-below($breakpoint) {
 
   // If the breakpoint exists in the map.
@@ -56,12 +51,7 @@ $breakpoints: (
     @media (max-width: ($breakpoint-value - 1)) {
       @content;
     }
-  
-  // If the breakpoint doesn't exist in the map.
-  } @else {
 
-    // Log a warning.
-    @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
 

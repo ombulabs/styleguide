@@ -36,7 +36,7 @@
 .column-half {
   @extend .column;
   width: 50%;
-  @include respond-below(sm) {
+  @include respond-below(small) {
     width: 100%;
   }
 }
@@ -44,7 +44,7 @@
 .column-third {
   @extend .column;
   width: 33.3333333333%;
-  @include respond-below(sm) {
+  @include respond-below(small) {
     width: 100%;
   }
 }
@@ -52,10 +52,10 @@
 .column-quarter {
   @extend .column;
   width: 25%;
-  @include respond-below(lg) {
+  @include respond-below(large) {
     width: 50%;
   }
-  @include respond-below(sm) {
+  @include respond-below(small) {
     width: 100%;
   }
 }

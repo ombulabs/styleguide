@@ -39,7 +39,7 @@ input, textarea {
   overflow: hidden;
   border-radius: 171px;
 	margin: auto;
-	@include respond-below(sm) {
+	@include respond-below(small) {
 		margin-top: 30px;
 	}
 }
@@ -86,23 +86,21 @@ input, textarea {
 		margin-top: 1em;
 	}
 
-	.actions{
-		input.button{
-			margin-top: 10px;
-			display: inline-block;
-			padding: 10px 20px;
-			width: 200px;
-			border-radius: 22px;
-			box-shadow: none;
-			font-style: normal;
-			font-size: 16px;
-			background-color: $dark_magenta;
-			color: $white;
-			cursor: pointer;
-			border: 0;
-			&:hover{
-				background-color: lighten($dark_magenta, 10%);
-			}
+	.actions input.button{
+		margin-top: 10px;
+		display: inline-block;
+		padding: 10px 20px;
+		width: 200px;
+		border-radius: 22px;
+		box-shadow: none;
+		font-style: normal;
+		font-size: 16px;
+		background-color: $dark_magenta;
+		color: $white;
+		cursor: pointer;
+		border: 0;
+		&:hover{
+			background-color: lighten($dark_magenta, 10%);
 		}
 	}
 }

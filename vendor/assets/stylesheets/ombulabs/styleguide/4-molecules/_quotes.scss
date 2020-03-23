@@ -56,82 +56,78 @@
 		border: 0;
 		box-shadow: none;
 		margin: auto;
-		@include respond-below(xs) {
-			ul{
-				li{
-					.client{
-						text-align: center;
-						a{
-							position: relative;
-							top:-40px;
-							line-height: 20px;
-							display: block;
-							img{
-								float: none;
-								margin: auto;
-								margin-bottom: 10px;
-							}
-						}
-						&:before{
-							display: inline-block;
+		@include respond-below(extra-small) {
+			ul li{
+				.client{
+					text-align: center;
+					a{
+						position: relative;
+						top:-40px;
+						line-height: 20px;
+						display: block;
+						img{
+							float: none;
 							margin: auto;
-							position: relative;
-							left: 0;
+							margin-bottom: 10px;
 						}
+					}
+					&:before{
+						display: inline-block;
+						margin: auto;
+						position: relative;
+						left: 0;
 					}
 				}
 			}
 		}
 		.bx-viewport{
-			.slider{
-				div{
-					color: $slogan_grey;
-					.tall-logo{
-						display: inline-block;
-						height: 50px;
+			.slider div{
+				color: $slogan_grey;
+				.tall-logo{
+					display: inline-block;
+					height: 50px;
+				}
+				.client-logo{
+					display: inline-block;
+					margin-bottom: 5px;
+					height: 20px;
+				}
+				.quote{
+					background-color: $white;
+					margin: 40px 0 20px 0;
+					background-color: $white;
+					border-radius: 4px;
+					padding: 20px;
+				}
+				p{
+					margin-top: 10px;
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.client{
+					font-size: 14px;
+					text-transform: uppercase;
+					line-height: 50px;
+					position: relative;
+					span{
+						text-transform: lowercase;
 					}
-					.client-logo{
-						display: inline-block;
-						margin-bottom: 5px;
-						height: 20px;
+					img{
+						float: left;
+						margin-right: 15px;
 					}
-					.quote{
-						background-color: $white;
-						margin: 40px 0 20px 0;
-						background-color: $white;
-						border-radius: 4px;
-						padding: 20px;
-					}
-					p{
-						margin-top: 10px;
-						font-size: 16px;
-						line-height: 24px;
-					}
-					.client{
-						font-size: 14px;
-						text-transform: uppercase;
-						line-height: 50px;
-						position: relative;
-						span{
-							text-transform: lowercase;
-						}
-						img{
-							float: left;
-							margin-right: 15px;
-						}
-						&:before{
-							content: "\f0d7";
-							font-family: 'FontAwesome';
-							color: $white;
-							font-size: 28px;
-							position: absolute;
-							top: -42px;
-							left: 15px;
-						}
+					&:before{
+						content: "\f0d7";
+						font-family: 'FontAwesome';
+						color: $white;
+						font-size: 28px;
+						position: absolute;
+						top: -42px;
+						left: 15px;
 					}
 				}
 			}
-			@include respond-below(sm) {
+			@include respond-below(small) {
 				overflow: initial !important;
 				height: 550px !important;
 			}
@@ -140,7 +136,7 @@
 			text-align: right;
 			top: -30px;
 			height: 30px;
-			@include respond-below(sm) {
+			@include respond-below(small) {
 				text-align: center;
 			}
 			&.bx-default-pager a{

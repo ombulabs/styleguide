@@ -19,10 +19,10 @@
   a{
 		color: $black;
 	}
-	@include respond-below(lg) {
+	@include respond-below(large) {
     color: $white;
 	}
-	@include respond-below(xs) {
+	@include respond-below(extra-small) {
     width: auto;
 		font-size: 24px;
 		height: 60px;
@@ -42,10 +42,10 @@
   margin-left: 72px;
 	text-shadow: $slogan_grey 0 0 0;
 	line-height: 1.4;
-	@include respond-below(lg) {
+	@include respond-below(large) {
     color: $orange;
 	}
-	@include respond-below(xs) {
+	@include respond-below(extra-small) {
     margin-left: 55px;
 		font-size: 12px;
 		margin-top: -24px;
