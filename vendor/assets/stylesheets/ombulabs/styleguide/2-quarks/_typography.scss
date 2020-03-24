@@ -1,0 +1,77 @@
+/* === TYPOGRAPHY */
+/* ========================== */
+
+@mixin font-open-sans-light {
+	font-family: $font-open-sans;
+	font-weight: 300;
+}
+@mixin font-open-sans-normal {
+	font-family: $font-open-sans;
+	font-weight: 400;
+}
+@mixin font-open-sans-bold {
+  font-family: $font-open-sans;
+  font-weight: 700;
+}
+@mixin font-lato-bold {
+  font-family: $font-lato;
+  font-weight: 700;
+}
+
+@mixin font-maven {
+	font-family: $font-maven;
+	font-weight: 400;
+}
+
+body {
+	@include font-open-sans-light;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	letter-spacing: 0.8px;
+}
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  strong{
+    background-color: rgba(255, 255, 255, 0.49);
+    padding: 0 10px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    margin-left: -10px;
+  }
+}
+h2{
+  font-size: 3.52em; // 60px
+  line-height: 90px;
+  @include respond-below(small) {
+    font-size: 3em; // 52px
+    line-height: 80px;
+  }
+  @include respond-below(extra-small) {
+    font-size: 2.35em; // 40px
+    line-height: 65px;
+  }
+}
+h3 {
+	font-size: 2.41em; // 41px
+	letter-spacing: 1px;
+	margin: .5em 0;
+  @include respond-below(small) {
+    font-size: 1.47em; // 25px
+  }
+  &:first-child {
+  	margin-top: 0;
+  }
+}
+h4 {
+	@include font-open-sans-bold;
+	font-size: 1.35em; // 23px
+	letter-spacing: .04em;
+  @include respond-below(small) {
+    font-size: 1.17em; // 20px
+  }
+}
+h5{
+  @include font-open-sans-bold;
+  font-size: 0.82em; // 14px
+  text-transform: uppercase;
+}

@@ -13,13 +13,10 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['lib/**/*.rb'] + Dir['vendor/**/*']
 
-  spec.add_dependency 'rails', '~> 6.0.2'
-  spec.add_dependency 'sass-rails', '~> 6.0'
-  # Jquery
+  spec.add_dependency 'rails', '>= 5.0.0'
+  spec.add_dependency 'sass-rails', '>= 5.0'
+  # Jquery 
   spec.add_dependency 'jquery-rails', '~> 4.3.0'
-  # Bootstrap
-  spec.add_dependency 'bootstrap-sass', '~> 3.4.0'
-  # Popper
-  spec.add_dependency 'popper_js', '~> 1.14.5'
-  spec.add_dependency 'material_design_lite-sass', '~> 1.3.0'
+  # Font Awesome
+  spec.add_dependency 'font-awesome-sass', '~> 5.12.0'
 end

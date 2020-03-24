@@ -5,10 +5,12 @@
     <script src="static/styleguide.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body class="styleguide-page">
+
     <a href="#" id="nav-button" class="">
       <span>Menu</span>
     </a>
+
     <ul id="main-nav">
       <a href="/"><h1>OmbuLabs</h1></a>
       <li><a href="#logo" title="Logo">Logo</a></li>
@@ -19,13 +21,15 @@
       <li><a href="#flash" title="Flash">Flash Messages</a></li>
       <li><a href="#icons" title="Icons">Icons</a></li>
     </ul>
+    
     <section id="page-wrapper">
       <div id="sections">
-        <h1>OmbuLabs Style Guide</h1>
+
+        <h2>OmbuLabs Style Guide</h2>
         <p>At <a href="http://www.ombulabs.com/" title="OmbuLabs.com" target="_blank">OmbuLabs.com</a>, we believe successful products are built applying the Lean Startup methodology. We love our test-driven process, scrums, pair programming, continuous integration and sprints.</p>
 
-        <div id="logo">
-          <h2>Logo</h2>
+        <div id="logo" class="section__content">
+          <h3>Logo</h3>
           <ul class="logos">
             <li><img src="vendor/assets/images/logo-1.png"><span>Logo with tagline</span></li>
             <li><img src="vendor/assets/images/logo-2.png"><span>Logo with tagline / Black</span></li>
@@ -34,7 +38,7 @@
           </ul>
         </div>
 
-        <div id="color">
+        <div id="color" class="section__content">
           <h2>Color</h2>
           <h3>Primary colors</h3>
           <ul id="color-samples">
@@ -51,86 +55,85 @@
           </ul>
         </div>
 
-        <div id="typography">
+        <div id="typography" class="section__content">
           <h2>Typography</h2>
 
-          <h3>Font Family</h3>
-          <ul class="font-family">
-            <li class="light">Open Sans Light <span> Weight: 300</span></li>
-            <li class="normal">Open Sans Regular <span> Weight: 400</span></li>
-            <li class="bold">Open Sans Bold <span> Weight: 700</span></li>
-          </ul>
-          <h3>Headings</h3>
-          <div id="headings">
-            <h1 class="h1">This is a large heading</h1>
+          <div>
+            <h4>Font Family</h4>
+            <ul class="font-family">
+              <li class="light">Open Sans Light <span> Weight: 300</span></li>
+              <li class="normal">Open Sans Regular <span> Weight: 400</span></li>
+              <li class="bold">Open Sans Bold <span> Weight: 700</span></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Headings</h4>
+            <h2>This is a large heading</h2>
             <span>Weight 300, 60pt</span>
 
-            <h2 class="h2">This is a medium heading</h2>
+            <h3>This is a medium heading</h3>
             <span>Weight 300, 41pt</span>
 
-            <h3 class="h3">This is a small heading</h3>
-            <span>Weight 700, 14pt, uppercase</span>
+            <h4>This is a small heading</h4>
+            <span>Weight 700, 23pt</span>
+
+            <h5>This is a small heading</h5>
+            <span>Weight 700, 14pt</span>
           </div>
-          <h3>Paragraph</h3>
-            <p class="paragraph">OmbuLabs helps small businesses and entrepreneurs easily setup and run their online shops. We spend our days helping businesses sell more and improving eCommerce in Latin America.</p>
+
+          <div>
+            <h4>Paragraph</h4>
+            <p>OmbuLabs helps small businesses and entrepreneurs easily setup and run their online shops. We spend our days helping businesses sell more and improving eCommerce in Latin America.</p>
             <span>Weight 400, 17pt</span>
+          </div>
+
         </div>
 
-        <div id="links-buttons">
+        <div id="links-buttons" class="section__content">
           <h2>Links & Buttons</h2>
-          <h3>Link</h3>
-          <p><a href="#" class="link">View Project</a></p> </br>
-          <h3>Buttons</h3>
-          <a href="#" class="button">Contact Us!</a>
-          <a href="#" class="button secondary">Send Message</a>
+          <div>
+            <a href="#">Link</a>
+            <a href="#" class="button">Button</a>
+          </div>
         </div>
 
-        <div id="forms">
+        <div id="forms" class="section__content new_contact">
           <h2>Forms</h2>
-            <h3>Input</h3>
           <div class="form-container">
             <label for="name">Your Name</label>
-            <input name="name" type="text">
+            <input placeholder="Your name" name="name" type="text">
+          </div>
+          <div class="form-container">
+            <label>Message</label>
+            <textarea placeholder="Your message" rows="4" cols="50"></textarea>
           </div>
 
-            <h3>Textarea</h3>
-            <div class="form-container">
-              <label>Message</label>
-              <textarea rows="4" cols="50"></textarea>
-            </div>
-
         </div>
 
-        <div id="flash">
+        <div id="flash" class="section__content">
           <h2>Flash Messages</h2>
-          <h3>Error</h3>
-          <div class="flash-message flash-error"><p><i class="fa fa-exclamation-circle"></i> Flash Error Message</p></div>
-
-          <h3>Warning</h3>
-          <div class="flash-message flash-warning"><p><i class="fa fa-exclamation-triangle"></i> Flash Warning Message</p></div>
-
-          <h3>Success</h3>
-          <div class="flash-message flash-success"><p><i class="fa fa-check-circle"></i> Flash Success Message</p></div>
-
-          <h3>Information</h3>
-          <div class="flash-message flash-info"><p><i class="fa fa-info-circle"></i> Flash Information Message</p></div>
+          <div class="flash-message flash-error"><p><i class="fa fa-exclamation-circle"></i>Error Message</p></div>
+          <div class="flash-message flash-warning"><p><i class="fa fa-exclamation-triangle"></i>Warning Message</p></div>
+          <div class="flash-message flash-success"><p><i class="fa fa-check-circle"></i>Success Message</p></div>
+          <div class="flash-message flash-info"><p><i class="fa fa-info-circle"></i>Information Message</p></div>
 
         </div>
 
-        <div id="icons">
+        <div id="icons" class="section__content">
           <h2>Icons</h2>
           <ul>
-            <li><i class="fa fa-star"></i><span>.fa-star</span></li>
+            <li><i class="fas fa-star"></i><span>.fa-star</span></li>
             <li><i class="fas fa-clock"></i><span>.fa-clock-o</span></li>
-            <li><i class="fa fa-flask"></i><span>.fa-flask</span></li>
+            <li><i class="fas fa-flask"></i><span>.fa-flask</span></li>
             <li><i class="fas fa-comments"></i><span>.fa-comments-o</span></li>
-            <li><i class="fa fa-users"></i><span>.fa-users</span></li>
-            <li><i class="fa fa-pencil-alt"></i><span>.fa-pencil</span></li>
+            <li><i class="fas fa-users"></i><span>.fa-users</span></li>
+            <li><i class="fas fa-pencil-alt"></i><span>.fa-pencil</span></li>
             <li><i class="fab fa-twitter"></i><span>.fa-twitter</span></li>
             <li><i class="fab fa-github"></i><span>.fa-github</span></li>
             <li><i class="fab fa-linkedin"></i><span>.fa-linkedin</span></li>
             <li><i class="fab fa-dribbble"></i><span>.fa-dribbble</span></li>
-            <li><i class="fa fa-slideshare"></i><span>.fa-slideshare</span></li>
+            <li><i class="fas fa-slideshare"></i><span>.fa-slideshare</span></li>
           </ul>
         </div>
 

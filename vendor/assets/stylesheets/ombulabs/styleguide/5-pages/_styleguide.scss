@@ -1,0 +1,257 @@
+.styleguide-page{
+  padding: 50px 0;
+  #nav-button{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    color: $white;
+    text-decoration: none;
+    line-height: 16px;
+    transition: left 0.3s ease-in-out;
+    &:hover{
+      opacity: 0.8;
+    }
+    span{
+      display: block;
+      padding: 10px 35px 10px 10px;
+      background-image: asset-url('menu-icon.png');
+      background-repeat: no-repeat;
+      background-color: $magenta;
+      color:$white;
+      font-weight: bold;
+      background-position: center right 3px;
+      margin: 10px;
+      border-radius: 4px;
+    }
+  }
+  
+  #main-nav{
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: $black;
+    font-size: 14px;
+    padding-top: 40px;
+    h1{
+      background-image: asset-url('style-guide-logo.png');
+      background-repeat: no-repeat;
+      background-position: 25px;
+      height: 200px;
+      text-indent: -9999px;
+      margin-bottom: 40px;
+    }
+    li a{
+      padding: 10px 40px;
+      display: block;
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-left: 5px solid $black;
+      font-weight: 400;
+      &:hover{
+        border-left: 5px solid $orange;
+        color: $orange;
+      }
+      &.nav-active{
+        color: $magenta;
+        border-left: 5px solid $magenta;
+      }
+    }
+  }    
+  #page-wrapper{
+    margin-left: 250px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 10;
+    min-height: 100%;
+    margin-bottom: 200px;
+    text-align: center;
+    #sections{
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      .section__content{
+        padding: 100px 0;
+        &#logo{
+          overflow: hidden;
+          .logos{
+            li{
+              width:44%;
+              float: left;
+              background-color: $white;
+              padding: 2%;
+              border-radius: 4px;
+              text-align: center;
+              &.black{
+                background-color:$black;
+              }
+              img{
+                margin: auto;
+                display: block;
+                padding: 50px 0px;
+                width: 100%;
+                max-width: 300px;
+              }
+              span{
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        &#color{
+          overflow: hidden;
+          #color-samples{
+            display: flex;
+            flex-direction: row;
+            li{
+              flex-grow: 1;
+              min-height: 235px;
+              &.light-green{
+                background: $light-green;
+              }
+              &.green{
+                background-color: $green;
+              }
+              &.orange{
+                background-color: $orange;
+              }
+              &.white{
+                background-color: $white;
+              }
+              &.magenta{
+                background-color: $magenta;
+              }
+              &.dark-grey{
+                background-color: $dark_grey;
+              }
+              &.light-grey{
+                background-color: $light_grey;
+              }
+              &.black{
+                background-color: $black;
+              }
+            }
+            p{
+              background-color: $white;
+              position: relative;
+              width: 100%;
+              bottom: 0;
+              top:150px;
+              text-align: center;
+              padding: 20px 0;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              font-size: 12px;
+              line-height: 16px;
+              border-top: 1px solid $light_grey;
+              span{
+                display: block;
+              }
+            }
+          }  
+        }
+
+        &#typography {
+          text-align: center;
+          div{
+            margin-top: 90px;
+          }
+          .font-family{
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 30px;
+            &.italic{
+              font-style: italic;
+            }
+            li{
+              padding-bottom: 10px;
+              &.light{
+                font-weight: 300;
+              }
+              &.bold{
+                font-weight: 700;
+              }
+              &.italic{
+                font-style: italic;
+              }
+            }
+          }  
+        }
+
+        &#icons{
+          ul{
+            overflow: hidden;
+            li{
+              float: left;
+              width: 50%;
+              padding: 10px 0;
+              i{
+                float: left;
+                padding: 13px;
+              }
+              span{
+                float: left;
+                margin: 10px 10px;
+              }
+            }
+          }
+        }
+
+        &#links-buttons{
+          div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a{
+              margin: 0 10px;
+            }
+          }
+        }
+
+        &#forms{
+          .form-container{
+            background-color: $light-green;
+            padding: 20px;
+            margin-top: 20px;
+          }
+        }
+
+        &#flash{
+          .flash-message{
+            padding: 10px 20px;
+            margin-top: 2em;
+            border-radius: 24px;
+            display: inline-block;
+            &.flash-error {
+              background: $magenta;
+              color: $white;
+            }
+            &.flash-warning {
+              background: $orange;
+            }
+            &.flash-success {
+              background: $green;
+              color: $white;
+            }
+            &.flash-info {
+              background: $light-green;
+              color: $black;
+            }
+          }  
+        }
+
+      }
+    }
+  }
+}

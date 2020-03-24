@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 require 'jquery-rails'
-require 'bootstrap-sass'
-require 'popper_js'
-require 'material_design_lite-sass'
+require 'font-awesome-sass'
 
 module Ombulabs
   module Styleguide

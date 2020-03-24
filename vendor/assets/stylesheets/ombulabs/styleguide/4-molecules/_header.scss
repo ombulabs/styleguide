@@ -1,0 +1,119 @@
+/* === HEADER */
+/* ========================== */
+
+header {
+	text-align: center;
+	color: $black;
+	padding: 5px 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+	position: fixed;
+	transition: all 0.2s ease-in;
+	@include respond-below(large) {
+		background-color: $black;
+	}
+	@include respond-below(extra-small) {
+		padding: 5px 10px;
+	}
+	&.fixed{
+		background-color: $black;
+		color: $white;
+		#navbar{
+			.logo-container a .logo{
+				color: $white;
+			}
+			.slogan{
+				color: $orange;
+			}
+			nav a{
+				color: $white;
+			}
+		}
+	}
+  #navbar{
+		overflow: hidden;
+    .logo-container{
+			float: left;
+			a{
+				color: $black;
+			}
+		}
+		#mobile-menu{
+			display: none;
+			@include respond-below(large) {
+				display: block;
+				position: absolute;
+				right: 20px;
+				font-size: 30px;
+				line-height: 76px;
+				color: $orange;
+			}
+			@include respond-below(extra-small) {
+				line-height: 60px;
+			}
+		}
+    nav{
+      float: right;
+			margin-top: 25px;
+      a{
+        color: $black;
+        font-size: 16px;
+        padding: 0px 8px;
+				&:hover{
+					color: $orange
+				}
+				&#contact{
+					background-color: $orange;
+					color: $black;
+					padding: 10px 20px;
+					border-radius: 20px;
+					&:hover{
+						background-color: lighten($orange, 10%);
+					}
+				}
+			}
+			@include respond-below(large) {
+				display: none;
+				&.active{
+					position: absolute;
+					top: 90px;
+					background-color: $black;
+					display: block;
+			    left: 0;
+			    right: 0;
+			    margin-top: 0;
+			    text-align: left;
+			    padding: 20px;
+					a{
+				    display: block;
+						padding: 10px 0;
+				    border-bottom: 1px solid $orange;
+						color: $white;
+						&:hover{
+							color: $orange;
+						}
+						&#contact{
+							background: none;
+							border: 0;
+							padding-left: 0;
+							color: $white;
+							&:hover{
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
+			@include respond-below(extra-small) {
+				&.active{
+					top:70px;
+				}
+				a{
+					display: block;
+					padding: 5px 0px;
+				}
+			}
+    }
+  }
+}
