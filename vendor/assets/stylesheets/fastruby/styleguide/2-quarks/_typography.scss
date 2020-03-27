@@ -81,10 +81,11 @@ h3 {
   line-height: 1.42;
   letter-spacing: 0.7px;
   margin-bottom: 1.625rem;
-  text-transform: uppercase; }
-  @include respond-above(xs) {
-    h3 {
-      font-size: 1rem; 
+}
+
+@include respond-above(xs) {
+  h3 {
+    font-size: 1rem; 
   } 
 }
 
