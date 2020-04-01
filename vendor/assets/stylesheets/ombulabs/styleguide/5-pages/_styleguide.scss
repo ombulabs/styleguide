@@ -227,30 +227,6 @@
           }
         }
 
-        &#flash{
-          .flash-message{
-            padding: 10px 20px;
-            margin-top: 2em;
-            border-radius: 24px;
-            display: inline-block;
-            &.flash-error {
-              background: $magenta;
-              color: $white;
-            }
-            &.flash-warning {
-              background: $orange;
-            }
-            &.flash-success {
-              background: $green;
-              color: $white;
-            }
-            &.flash-info {
-              background: $light-green;
-              color: $black;
-            }
-          }  
-        }
-
       }
     }
   }
