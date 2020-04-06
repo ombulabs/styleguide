@@ -2,12 +2,12 @@
 /* ========================== */
 
 @mixin font-open-sans-light {
-	font-family: $font-open-sans;
-	font-weight: 300;
+  font-family: $font-open-sans;
+  font-weight: 300;
 }
 @mixin font-open-sans-normal {
-	font-family: $font-open-sans;
-	font-weight: 400;
+  font-family: $font-open-sans;
+  font-weight: 400;
 }
 @mixin font-open-sans-bold {
   font-family: $font-open-sans;
@@ -19,15 +19,15 @@
 }
 
 @mixin font-maven {
-	font-family: $font-maven;
-	font-weight: 400;
+  font-family: $font-maven;
+  font-weight: 400;
 }
 
 body {
-	@include font-open-sans-light;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	letter-spacing: 0.8px;
+  @include font-open-sans-light;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  letter-spacing: 0.8px;
 }
 h1, h2, h3, h4, h5 {
   text-align: center;
@@ -52,20 +52,20 @@ h2{
   }
 }
 h3 {
-	font-size: 2.41em; // 41px
-	letter-spacing: 1px;
-	margin: .5em 0;
+  font-size: 2.41em; // 41px
+  letter-spacing: 1px;
+  margin: .5em 0;
   @include respond-below(small) {
     font-size: 1.47em; // 25px
   }
   &:first-child {
-  	margin-top: 0;
+    margin-top: 0;
   }
 }
 h4 {
-	@include font-open-sans-bold;
-	font-size: 1.35em; // 23px
-	letter-spacing: .04em;
+  @include font-open-sans-bold;
+  font-size: 1.35em; // 23px
+  letter-spacing: .04em;
   @include respond-below(small) {
     font-size: 1.17em; // 20px
   }

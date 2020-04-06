@@ -2,105 +2,105 @@
 /* ========================== */
 
 label {
-	@include font-open-sans-normal;
-	color: #fff;
-	margin-top: 1em;
-	margin-bottom: .2em;
-	display: block;
-	text-transform: uppercase;
+  @include font-open-sans-normal;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: .2em;
+  display: block;
+  text-transform: uppercase;
 }
 
 input, textarea {
-	display: block;
-	border: none;
-	background: #fff;
-	padding: 10px;
-	width: 100%;
-	border-radius: 2px;
-	font-size: 1em;
-	border: 1px solid $white;
-	&:focus{
-		outline: none;
-		border: 1px solid #57CE81;
-	}
+  display: block;
+  border: none;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 2px;
+  font-size: 1em;
+  border: 1px solid $white;
+  &:focus{
+    outline: none;
+    border: 1px solid #57CE81;
+  }
 }
 
 .form-error {
-	background: $orange;
-	padding: 10px 20px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	border-radius: 24px;
+  background: $orange;
+  padding: 10px 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 24px;
 }
 
 .contact-img{
-	width: 270px;
+  width: 270px;
   height: 270px;
   overflow: hidden;
   border-radius: 171px;
-	margin: auto;
-	@include respond-below(small) {
-		margin-top: 30px;
-	}
+  margin: auto;
+  @include respond-below(small) {
+    margin-top: 30px;
+  }
 }
 
 .form-success {
-	color: #57CE81;
-	@include font-open-sans-normal;
-	font-size: 1.2em;
-	padding-top: 20px;
+  color: #57CE81;
+  @include font-open-sans-normal;
+  font-size: 1.2em;
+  padding-top: 20px;
 }
 
 // CONTACT FORM
 .new_contact{
 
-	@mixin placeholder{
+  @mixin placeholder{
     font-family: $font-open-sans;
     font-size: 14px;
-	}
-	
-	label{
-		color: $slogan_grey;
-		font-size: 14px;
-		font-weight: 700;
-	}
+  }
+  
+  label{
+    color: $slogan_grey;
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-	input, textarea{
-		@include placeholder;
-		&::-webkit-input-placeholder {
-			@include placeholder;
-		}
-		&:-moz-placeholder {
-			@include placeholder;
-		}
-		&::-moz-placeholder {
-			@include placeholder;
-	
-		}
-		&:-ms-input-placeholder {
-			@include placeholder;
-		}
-	}
+  input, textarea{
+    @include placeholder;
+    &::-webkit-input-placeholder {
+      @include placeholder;
+    }
+    &:-moz-placeholder {
+      @include placeholder;
+    }
+    &::-moz-placeholder {
+      @include placeholder;
+  
+    }
+    &:-ms-input-placeholder {
+      @include placeholder;
+    }
+  }
 
-	.field.recaptcha {
-		margin-top: 1em;
-	}
+  .field.recaptcha {
+    margin-top: 1em;
+  }
 
-	.actions input.button{
-		margin-top: 10px;
-		display: inline-block;
-		padding: 10px 20px;
-		width: 200px;
-		border-radius: 22px;
-		box-shadow: none;
-		font-style: normal;
-		font-size: 16px;
-		background-color: $dark_magenta;
-		color: $white;
-		cursor: pointer;
-		border: 0;
-		&:hover{
-			background-color: lighten($dark_magenta, 10%);
-		}
-	}
+  .actions input.button{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 22px;
+    box-shadow: none;
+    font-style: normal;
+    font-size: 16px;
+    background-color: $dark_magenta;
+    color: $white;
+    cursor: pointer;
+    border: 0;
+    &:hover{
+      background-color: lighten($dark_magenta, 10%);
+    }
+  }
 }

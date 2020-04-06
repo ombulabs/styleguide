@@ -13,32 +13,32 @@
 }
 
 #contact-us-popup {
-	display: none;
-	background: $magenta;
-	padding: $gutter;
-	border-radius: 5px;
-	box-shadow: rgba(#000, .2) 0 5px 0px;
-	width: 496px;
-	
-	@include respond-below(small) {
-		font-size: .9em;
-		width: 70% !important;
-		left: 15% !important;
-		right: 15% !important;
-		margin: 0 !important;
-		padding: 15px;
-	}
+  display: none;
+  background: $magenta;
+  padding: $gutter;
+  border-radius: 5px;
+  box-shadow: rgba(#000, .2) 0 5px 0px;
+  width: 496px;
+  
+  @include respond-below(small) {
+    font-size: .9em;
+    width: 70% !important;
+    left: 15% !important;
+    right: 15% !important;
+    margin: 0 !important;
+    padding: 15px;
+  }
 
-	@include respond-below(extra-small) {
-		font-size: .7em;
-		width: 98% !important;
-		left: 1% !important;
-		right: 1% !important;
-		padding: 10px
-	}
+  @include respond-below(extra-small) {
+    font-size: .7em;
+    width: 98% !important;
+    left: 1% !important;
+    right: 1% !important;
+    padding: 10px
+  }
 
-	h1 {
-		@extend h3;
-		color: #fff;
-	}
+  h1 {
+    @extend h3;
+    color: #fff;
+  }
 }
