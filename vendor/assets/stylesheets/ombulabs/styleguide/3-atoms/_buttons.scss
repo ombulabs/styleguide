@@ -2,17 +2,17 @@
 /* ========================== */
 
 .button, input.button {
-	display: inline-block;
-	text-align: center;
-	background: $orange;
-	border-radius: 20px;
-	padding: 10px 20px;
-	color: $black;
-	transition: $hover_transition_time;
-	transition-property: background, color;
+  display: inline-block;
+  text-align: center;
+  background: $orange;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: $black;
+  transition: $hover_transition_time;
+  transition-property: background, color;
 
-	&:hover, &:active{
-		background-color: lighten($orange, 10%);
-		text-decoration: none;
-	}
+  &:hover, &:active{
+    background-color: lighten($orange, 10%);
+    text-decoration: none;
+  }
 }
