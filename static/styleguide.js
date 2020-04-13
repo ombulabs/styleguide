@@ -39,12 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
         a.addEventListener('click', function(event) { event.preventDefault(); })
     });
 
+    // show mobile menu
     document.getElementById("nav-button").addEventListener('click', function() {
         document.getElementById('main-nav').classList.toggle('open')
         document.getElementById('nav-button').classList.toggle('open');
         document.body.classList.toggle('modal-active');
     });
 
+    // on click, hide mobile menu
     document.querySelectorAll('#main-nav a').forEach( a => {
         a.addEventListener('click', function() {
             document.getElementById('main-nav').classList.remove('open')
