@@ -14,9 +14,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*.rb'] + Dir['vendor/**/*']
 
   spec.add_dependency 'rails', '>= 5.0.0'
-  spec.add_dependency 'sass-rails', '>= 5.0'
-  # Jquery 
-  spec.add_dependency 'jquery-rails', '~> 4.3.0'
+  spec.add_dependency 'sass-rails', '~> 5.0'
   # Font Awesome
   spec.add_dependency 'font-awesome-sass', '~> 5.12.0'
 end
