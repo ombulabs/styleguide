@@ -1,70 +1,55 @@
-//= require jquery
-//= require jquery_ujs
-//= require popper
-
-$(document).ready(function(){
-    /**
-     * This part causes smooth scrolling using scrollto.js
-     * We target all a tags inside the nav, and apply the scrollto.js to it.
-     */
-
-    $("#main-nav a").click(function(event){
-        var hash = this.hash;
-        event.preventDefault();
-        $('html, body').animate({
-                scrollTop: $(hash).offset().top
-        }, 800);
+document.addEventListener('DOMContentLoaded', function() {
+    // smooth scroll to anchors
+    document.querySelectorAll("#main-nav a").forEach( a => {
+        a.addEventListener('click', function(evn){
+            evn.preventDefault();
+            document.getElementById(a.hash.replace('#','')).scrollIntoView({behavior: 'smooth'})
+            // change location hash after smooth scrolling
+            setTimeout(() => window.location.hash = a.hash, 1000)
+        })
     });
 
-    /**
-     * This part handles the highlighting functionality.
-     * We use the scroll functionality again, some array creation and
-     * manipulation, class adding and class removing, and conditional testing
-     */
-    var aChildren = $("#main-nav li").children(); // find the a children of the list items
-    var aArray = []; // create the empty aArray
-    for (var i=0; i < aChildren.length; i++) {
-        var aChild = aChildren[i];
-        var ahref = $(aChild).attr('href');
-        aArray.push(ahref);
-    } // this for loop fills the aArray with attribute href values
+    // use intersection observer to detect section
 
-    $(window).scroll(function(){
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-        var windowHeight = $(window).height(); // get the height of the window
-        var docHeight = $(document).height();
+    // detect element on the top portion
+    let options = {
+        rootMargin: '-10% 0px -89% 0px'
+    }
 
-        for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-            var divHeight = $(theID).height(); // get the height of the div in question
-            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                $("a[href='" + theID + "']").addClass("nav-active");
-            } else {
-                $("a[href='" + theID + "']").removeClass("nav-active");
+    // set current element nav class
+    let callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                document.querySelectorAll('#main-nav a').forEach( a => { a.classList.remove('nav-active') })
+                document.querySelector('[href="#' + entry.target.id + '"]').classList.add('nav-active')    
             }
-        }
+        });
+    };
 
-        if(windowPos + windowHeight == docHeight) {
-            if (!$("#main-nav li:last-child a").hasClass("nav-active")) {
-                var navActiveCurrent = $(".nav-active").attr("href");
-                $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                $("#main-nav li:first-child a").addClass("nav-active");
-            }
-        }
+    // create observer
+    let observer = new IntersectionObserver(callback, options);
+
+    // observe all elements
+    document.querySelectorAll('#sections > div').forEach(section => {
+        observer.observe(section)
+    })
+
+    // prevent links default behavior
+    document.querySelectorAll('a').forEach( a => {
+        a.addEventListener('click', function(event) { event.preventDefault(); })
     });
 
-    $( "a" ).click(function( event ) {
-      event.preventDefault();
+    document.getElementById("nav-button").addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open')
+        document.getElementById('nav-button').classList.toggle('open');
+        document.body.classList.toggle('modal-active');
     });
 
-    $("#nav-button").click(function(){
-      $('#main-nav, #nav-button').toggleClass('open');
-      $('body').toggleClass('modal-active');
-    });
-
-    $('#main-nav li a').click(function(){
-      $('#main-nav, #nav-button').removeClass('open');
-      $('body').removeClass('modal-active');
+    document.querySelectorAll('#main-nav a').forEach( a => {
+        a.addEventListener('click', function() {
+            document.getElementById('main-nav').classList.remove('open')
+            document.getElementById('nav-button').classList.remove('open');
+            document.body.classList.remove('modal-active');
+        })
     })
 });
