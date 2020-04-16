@@ -10,6 +10,14 @@
     text-decoration: none;
     line-height: 16px;
     transition: left 0.3s ease-in-out;
+    @include respond-below(small) {
+      display: block;
+      &.open{
+        span{
+          background-image: asset-url('close-icon.png');
+        }
+      }
+    }
     &:hover{
       opacity: 0.8;
     }
@@ -40,6 +48,18 @@
     background-color: $black;
     font-size: 14px;
     padding-top: 40px;
+    @include respond-below(small) {
+      width: 100%;
+      right: -100vw;
+      left:auto;
+    }
+    &.open{
+	    right: 0;
+			li a:hover, li a:active{
+		    color:$magenta;
+		    border-color: $magenta;
+		  }
+	  }
     h1{
       background-image: asset-url('style-guide-logo.png');
       background-repeat: no-repeat;
@@ -75,6 +95,9 @@
     min-height: 100%;
     margin-bottom: 200px;
     text-align: center;
+    @include respond-below(small) {
+      margin-left: 0px;
+    }
     #sections{
       width: 80%;
       max-width: 800px;
@@ -91,6 +114,9 @@
               padding: 2%;
               border-radius: 4px;
               text-align: center;
+              @include respond-below(small) {
+                width: 100%;
+              }
               &.black{
                 background-color:$black;
               }
@@ -100,6 +126,9 @@
                 padding: 50px 0px;
                 width: 100%;
                 max-width: 300px;
+                @include respond-below(small) {
+                  max-width: 200px;
+                }
               }
               span{
                 text-align: center;
@@ -113,9 +142,15 @@
           #color-samples{
             display: flex;
             flex-direction: row;
+            @include respond-below(small) {
+              flex-direction: column;
+            }
             li{
               flex-grow: 1;
               min-height: 235px;
+              @include respond-below(small) {
+                margin-bottom: 20px;
+              }
               &.light-green{
                 background: $light-green;
               }
@@ -195,6 +230,9 @@
               float: left;
               width: 50%;
               padding: 10px 0;
+              @include respond-below(small) {
+                width: 100%;
+              }
               i{
                 float: left;
                 padding: 13px;
