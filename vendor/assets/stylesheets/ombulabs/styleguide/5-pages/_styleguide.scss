@@ -1,5 +1,8 @@
 .styleguide-page{
   padding: 50px 0;
+  &.modal-active{
+    overflow: hidden;
+  }
   #nav-button{
     display: none;
     position: fixed;
@@ -54,12 +57,12 @@
       left:auto;
     }
     &.open{
-	    right: 0;
-			li a:hover, li a:active{
-		    color:$magenta;
-		    border-color: $magenta;
-		  }
-	  }
+      right: 0;
+      li a:hover, li a:active{
+        color:$magenta;
+        border-color: $magenta;
+      }
+    }
     h1{
       background-image: asset-url('style-guide-logo.png');
       background-repeat: no-repeat;
