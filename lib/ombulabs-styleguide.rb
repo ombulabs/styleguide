@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'jquery-rails'
 require 'font-awesome-sass'
 
 module Ombulabs
