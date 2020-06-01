@@ -5,7 +5,7 @@ footer {
 	text-align: center;
 	padding-top: 5rem ;
 	padding-bottom: 10px;
-  overflow: hidden;
+	overflow: hidden;
 	.logo-footer a{
 		color: $white
 	}
@@ -27,7 +27,7 @@ footer {
 		display: inline-block;
 	}
 	.logo-footer {
-	  background-image: asset_url('isotype_vector.svg');
+		background-image: asset_url('isotype_vector.svg');
 		background-repeat: no-repeat;
 		background-position: left center;
 		width: 100px;
@@ -44,7 +44,7 @@ footer {
 		a {
 			text-decoration: none;
 			top: -4px;
-    		position: relative;
+			position: relative;
 		}
 	}
 	.productized-footer {
@@ -73,10 +73,11 @@ footer {
 	}
 	.menu{
 		a{	
-			display: block;
+			display: table;
 			text-decoration: underline;
 			padding: 2px 0;
 			color: lighten($grey, 50%);
+			margin: 0 auto;
 			&:hover{
 				color: $green;
 			}
