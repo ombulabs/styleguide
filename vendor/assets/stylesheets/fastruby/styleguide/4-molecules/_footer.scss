@@ -73,11 +73,18 @@ footer {
 	}
 	.menu{
 		a{	
+<<<<<<< HEAD
 			display: table;
 			text-decoration: underline;
 			padding: 2px 0;
 			color: lighten($grey, 50%);
 			margin: 0 auto;
+=======
+			display: block;
+			text-decoration: underline;
+			padding: 2px 0;
+			color: lighten($grey, 50%);
+>>>>>>> gh-pages
 			&:hover{
 				color: $green;
 			}

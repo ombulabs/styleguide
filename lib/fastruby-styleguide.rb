@@ -5,7 +5,7 @@ require 'popper_js'
 require 'bootstrap-sass'
 require 'material_design_lite-sass'
 
-module Ombulabs
+module Fastruby
   module Styleguide
     class Engine < ::Rails::Engine
     end
