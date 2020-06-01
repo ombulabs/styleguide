@@ -5,6 +5,13 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  word-break: break-word;
+  @include respond-below(sm) {
+		padding: 1rem;
+  }
+  @include respond-below(md) {
+		padding: 2rem;
+	}
   &.warnings-content{
     border-color: $yellow;
   }

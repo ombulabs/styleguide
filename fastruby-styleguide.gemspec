@@ -1,15 +1,15 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ombulabs/styleguide/version'
+require 'fastruby/styleguide/version'
 
 Gem::Specification.new do |spec|
-  spec.name           = 'ombulabs-styleguide'
+  spec.name           = 'fastruby-styleguide'
   spec.version        = Styleguide.gem_version
   spec.authors        = ['OmbuLabs']
   spec.email          = ['hello@ombulabs.com']
 
-  spec.summary        = 'Style Guide for all OmbuLabs products'
-  spec.homepage       = 'https://github.com/ombulabs/styleguide'
+  spec.summary        = 'Style Guide for all Fast Ruby products'
+  spec.homepage       = 'https://github.com/fastruby/styleguide'
 
   spec.files = Dir['lib/**/*.rb'] + Dir['vendor/**/*']
 
