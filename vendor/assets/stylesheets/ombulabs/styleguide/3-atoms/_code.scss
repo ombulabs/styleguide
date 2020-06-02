@@ -1,0 +1,33 @@
+code, pre code {
+  background-color: #EAEAEA;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 10px;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left !important;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent !important;
+    border-radius: 0;
+    font-family: monospace;
+    color: #222222;
+    background-color: rgba(50,50,53,0.1);
+  }
+}
