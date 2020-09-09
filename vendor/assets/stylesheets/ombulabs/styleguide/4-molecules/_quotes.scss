@@ -12,6 +12,9 @@
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 20px;
+    @include respond-below(extra-small) {
+      margin-left: -2em;
+    }
   }
   .carousel{
     position: relative;
@@ -132,7 +135,7 @@
         overflow: initial !important;
         height: 550px !important;
       }
-    }  
+    }
     .bx-pager{
       text-align: right;
       top: -30px;
