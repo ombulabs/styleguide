@@ -20,7 +20,7 @@
   }
   .nav-arrow{
     position: absolute;
-    top: 70px;
+    top: -20px;
     &.prev-arrow{
       right: 65px;
       a{
@@ -49,6 +49,14 @@
         color: $light_grey;
         transition: all 0.2s ease-in;
       }
+    }
+  }
+  @include respond-below(extra-small) {
+    h3 {
+      margin-bottom: 40px;
+    }
+    .nav-arrow {
+      top: 30px;
     }
   }
   .bx-wrapper{
@@ -132,7 +140,7 @@
         overflow: initial !important;
         height: 550px !important;
       }
-    }  
+    }
     .bx-pager{
       text-align: right;
       top: -30px;
