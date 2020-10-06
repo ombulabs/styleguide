@@ -8,7 +8,7 @@ header {
 	height: 80px;
 	padding: 26px 50px;
 	box-shadow: 0 1px 11.5px 0 rgba($black, 0.18);
-  	@include respond-above(sm) {
+  	@include respond-above(md) {
   		padding: 50px;
 		height: 160px;
 		background-color: transparent;
@@ -60,7 +60,7 @@ header {
   		height: 28px;
   		margin-left: -30px;
     	display: flex;
-    	@include respond-above(sm) {
+    	@include respond-above(md) {
 	  		height: 66px;
 	  		margin-left: 0;
 	  	}
@@ -151,4 +151,3 @@ header {
 		}
   	}
 }
-
