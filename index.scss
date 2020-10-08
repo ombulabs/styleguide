@@ -1,0 +1,21 @@
+/***************************************
+****FASTRUBY STYLEGUIDE NODE PACKAGE****
+******* application css ****************
+
+This is the entry css point for the styleguide
+when using it as an npm/yarn package.
+
+***************************************/
+
+// Material
+@import "material-design-lite/src/variables";
+@import "material-design-lite/src/mixins";
+@import "material-design-lite/src/resets/resets";
+@import "material-design-lite/src/typography/typography";
+@import "material-design-lite/src/textfield/textfield";
+@import "material-design-lite/src/slider/slider";
+
+// Bootstrap
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "vendor/assets/stylesheets/fastruby/styleguide-core.scss";
