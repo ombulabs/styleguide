@@ -93,3 +93,13 @@ Build static
 Styles and Javascript files are in `static` folder.
 
 Components can be checked if `index.html` file is opened in a browser.
+
+## Updating the Styleguide Code in a Project
+
+### As a gem
+
+Run `bundle update fastruby-styleguide --source`
+
+### As a module
+
+Run `yarn upgrade fastruby-io-styleguide`
