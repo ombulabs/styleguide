@@ -1,0 +1,17 @@
+{
+  "name": "fastruby-io-styleguide",
+  "version": "1.0.0",
+  "description": "Styleguide used in FastRuby.io",
+  "main": "index.js",
+  "style": "index.scss",
+  "scss": "index.scss",
+  "repository": "git@github.com:fastruby/styleguide.git",
+  "author": "Ariel Juodziukynas <arieljuod@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "bootstrap-sass": "^3.4.1",
+    "material-design-lite": "^1.3.0"
+  }
+}

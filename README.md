@@ -1,38 +1,83 @@
 # FastRuby::Styleguide
 
-## Ruby on Rails Installation
+## Gem Version
+### Ruby on Rails Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fastruby-styleguide'
+gem "fastruby-styleguide", github: "fastruby/styleguide", branch: "gh-pages"
 ```
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
 
-Or install it yourself as:
+### Usage with Sprockets
 
-    $ gem install fastruby-styleguide
-
-## Usage
-
-In application.css, add:
+In `application.css`, add:
 
 ```ruby
 *= require fastruby/styleguide
 ```
 
-or if you are using scss: appliation.scss
+or, if you are using SCSS, in `application.scss` add:
 
-```ruby
+```js
 @import "fastruby/styleguide";
 ```
 
-In application.js add:
-```ruby
+In `application.js` add:
+
+```js
 //= require fastruby/styleguide
+```
+
+## As a Node module (Yarn package)
+
+### Ruby on Rails Installation
+
+Install the package directly from this repo
+
+```sh
+$ yarn add "fastruby/styleguide#add-yarn-package-support"
+```
+
+> TODO: replace `#add-yarn-package-support` with `#gh-pages` after it's merged
+
+### CSS with Sprockets
+
+In `app/assets/stylesheets/application.scss, add:
+
+```scss
+@import "fastruby-io-styleguide";
+```
+
+### JavaScript with Webpacker
+
+In `app/javascripts/packs/application.js` add:
+
+```js
+import "fastruby-io-styleguide"
+```
+
+In `config/webpack/environment.js` add this plugin config to expose jQuery as a global object:
+
+```js
+const { environment } = require('@rails/webpacker')
+
+const webpack = require('webpack')
+environment.plugins.prepend(
+  'Provide',
+  new webpack.ProvidePlugin({
+    $: 'jquery/src/jquery',
+    jQuery: 'jquery/src/jquery'
+  })
+)
+
+module.exports = environment
 ```
 
 ## Static generation
@@ -48,3 +93,13 @@ Build static
 Styles and Javascript files are in `static` folder.
 
 Components can be checked if `index.html` file is opened in a browser.
+
+## Updating the Styleguide Code in a Project
+
+### As a gem
+
+Run `bundle update fastruby-styleguide --source`
+
+### As a module
+
+Run `yarn upgrade fastruby-io-styleguide`
