@@ -42,10 +42,8 @@ In `application.js` add:
 Install the package directly from this repo
 
 ```sh
-$ yarn add "fastruby/styleguide#add-yarn-package-support"
+$ yarn add "fastruby/styleguide#gh-pages"
 ```
-
-> TODO: replace `#add-yarn-package-support` with `#gh-pages` after it's merged
 
 ### CSS with Sprockets
 
