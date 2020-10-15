@@ -5,4 +5,4 @@
 //= require material/rAF
 //= require material/textfield
 //= require material/slider
-//= require custom
+//= require ./custom
