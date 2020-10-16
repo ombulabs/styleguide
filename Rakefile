@@ -6,6 +6,7 @@ SOURCE_DIR  = File.expand_path('vendor/assets/')
 
 desc 'Precompile assets'
 task :precompile_assets do
+  require 'uglifier'
   require 'sprockets-gem-paths'
 
   sh "rm -rf #{BUILD_DIR}"
@@ -30,9 +31,23 @@ task :precompile_assets do
   sprockets.append_gem_paths
 
   BUNDLES.each do |bundle|
+    filename = File.join(BUILD_DIR, bundle)
+    min_filename = File.join(BUILD_DIR, bundle.gsub("styleguide", "styleguide.min"))
+    map_filename = filename + ".map"
+
     sprockets
       .find_asset(bundle)
       .write_to(File.join(BUILD_DIR, bundle))
+
+    if bundle.end_with?("js")
+      uglified, source_map = Uglifier.new(harmony: true).compile_with_map(File.read(filename))
+      File.write(min_filename, uglified)
+      File.write(map_filename, source_map)
+    end
+
+    if bundle.end_with?("css")
+      FileUtils.copy(filename, min_filename)
+    end
 
     puts "#{bundle} file has been compiled"
   end

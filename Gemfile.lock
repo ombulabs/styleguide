@@ -68,6 +68,7 @@ GEM
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     erubi (1.9.0)
+    execjs (2.7.0)
     ffi (1.13.0)
     font-awesome-sass (5.12.0)
       sassc (>= 1.11)
@@ -150,6 +151,8 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -161,6 +164,7 @@ PLATFORMS
 DEPENDENCIES
   ombulabs-styleguide!
   sprockets-gem-paths
+  uglifier
 
 BUNDLED WITH
    2.1.4
