@@ -4,3 +4,4 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'sprockets-gem-paths'
+gem 'uglifier'
