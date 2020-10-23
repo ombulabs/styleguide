@@ -1,6 +1,6 @@
 # OmbuLabs::StyleGuide
 
-## Ruby on Rails Installation
+## Ruby on Rails Installation (as a Gem)
 
 Add this line to your application's Gemfile:
 
@@ -33,6 +33,20 @@ or if you are using scss: appliation.scss
 In application.js add:
 ```ruby
 //= require ombulabs/styleguide
+```
+
+## Installation (as a Node Module)
+
+Install the package directly from this repo:
+
+```sh
+$ yarn add "ombulabs/styleguide#gh-pages"
+```
+
+In `app/assets/stylesheets/application.scss`, add:
+
+```scss
+@import "ombulabs-styleguide";
 ```
 
 ## Static generation
