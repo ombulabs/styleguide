@@ -1,0 +1,1 @@
+// this is empty on purpose, the JS is used only in the GitHub page

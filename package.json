@@ -1,0 +1,15 @@
+{
+  "name": "ombulabs-styleguide",
+  "version": "1.0.0",
+  "description": "Styleguide for OmbuLabs.com",
+  "main": "index.js",
+  "style": "index.scss",
+  "scss": "index.scss",
+  "repository": "git@github.com:ombulabs/styleguide.git",
+  "author": "Ariel Juodziukynas <arieljuod@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.12.0"
+  }
+}
