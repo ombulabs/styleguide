@@ -53,12 +53,11 @@ input, textarea {
 
 // CONTACT FORM
 .new_contact{
-
   @mixin placeholder{
     font-family: $font-open-sans;
     font-size: 14px;
   }
-  
+
   label{
     color: $slogan_grey;
     font-size: 14px;
@@ -66,6 +65,8 @@ input, textarea {
   }
 
   input, textarea{
+    border: solid 1px $slogan_grey;
+
     @include placeholder;
     &::-webkit-input-placeholder {
       @include placeholder;
@@ -75,7 +76,7 @@ input, textarea {
     }
     &::-moz-placeholder {
       @include placeholder;
-  
+
     }
     &:-ms-input-placeholder {
       @include placeholder;
