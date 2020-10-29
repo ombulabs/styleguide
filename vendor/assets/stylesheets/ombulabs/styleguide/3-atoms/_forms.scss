@@ -3,7 +3,7 @@
 
 label {
   @include font-open-sans-normal;
-  color: #fff;
+  color: $slogan_grey;
   margin-top: 1em;
   margin-bottom: .2em;
   display: block;
@@ -65,7 +65,7 @@ input, textarea {
   }
 
   input, textarea{
-    border: solid 1px $slogan_grey;
+    border: none;
 
     @include placeholder;
     &::-webkit-input-placeholder {
