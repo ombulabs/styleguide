@@ -12,13 +12,11 @@ label {
 
 input, textarea {
   display: block;
-  border: none;
   background: #fff;
   padding: 10px;
   width: 100%;
   border-radius: 2px;
   font-size: 1em;
-  border: 1px solid $white;
   &:focus{
     outline: none;
     border: 1px solid #57CE81;
