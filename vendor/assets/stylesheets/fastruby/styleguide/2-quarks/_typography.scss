@@ -1,10 +1,10 @@
 // Font Variables
 $light: 300;
-$medium: 500;
-$bold: 900;
+$medium: 400;
+$bold: 700;
 
 // Source Code Font
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 @mixin source-code-light{
   font-family: $font-source-code;
@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Oxygen', sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.42;
