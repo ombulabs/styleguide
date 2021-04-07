@@ -1,0 +1,23 @@
+.status-label{
+    display: block;
+    width: 100px;
+    padding: 0.25rem;
+    text-align: center;
+    border-style: solid;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    margin: 0 auto;
+    
+    &.accepted{
+      border-color: $green;
+      background-color: rgba($green, $alpha: 0.2);
+    }
+    &.pending{
+      border-color: $orange;
+      background-color: rgba($orange, $alpha: 0.2);
+    }
+    &.rejected{
+      border-color: $magenta;
+      background-color: rgba($magenta, $alpha: 0.2);
+    }
+  }

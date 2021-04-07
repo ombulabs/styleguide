@@ -21,6 +21,9 @@
       <li><a href="#code" title="Code">Code block</a></li>
       <li><a href="#flash" title="Flash">Flash Messages</a></li>
       <li><a href="#icons" title="Icons">Icons</a></li>
+      <li><a href="#tables" title="Tables">Tables</a></li>
+      <li><a href="#labels" title="Labels">Labels</a></li>
+
     </ul>
 
     <section id="page-wrapper">
@@ -145,6 +148,75 @@ end</code></pre>
             <li><i class="fab fa-slideshare"></i><span>.fa-slideshare</span></li>
           </ul>
         </div>
+
+        <div id="tables" class="section__content">
+          <h2>Tables</h2>
+          <table>
+            <thead>
+              <tr class="table-header-row">
+                <th class="number-cell">Number</th>
+                <th>Title/Description</th>
+                <th class="status-header">Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td class="number-cell">001</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipiscing elit habitasse orci ut, dapibus nulla ante ultrices. Dignissim dictum ad habitasse curabitur quis praesent, facilisi magna curae lectus euismod primis volutpat, congue semper erat suscipit imperdiet</td>
+                <td><span class="status-label accepted">Accepted</span></td>
+                <td>
+                  <div class="actions-cell">
+                    <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                    <a href="#"><i class="fas fa-file-alt"></i></a>
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr class="">
+                <td class="number-cell">099</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipiscing elit habitasse orci ut, dapibus nulla ante ultrices. Dignissim dictum ad habitasse curabitur quis praesent, facilisi magna curae lectus euismod primis volutpat, congue semper erat suscipit imperdiet</td>
+                <td><span class="status-label pending">Peding</span></td>
+                <td>
+                  <div class="actions-cell">
+                    <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                    <a href="#"><i class="fas fa-file-alt"></i></a>
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td class="number-cell">999</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipiscing elit habitasse orci ut, dapibus nulla ante ultrices. Dignissim dictum ad habitasse curabitur quis praesent, facilisi magna curae lectus euismod primis volutpat, congue semper erat suscipit imperdiet</td>
+                <td><span class="status-label rejected">Rejected</span></td>
+                <td>
+                  <div class="actions-cell">
+                    <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                    <a href="#"><i class="fas fa-file-alt"></i></a>
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          
+          </table>
+        </div>
+
+        <div id="labels" class="section__content">
+          <h2>Labels</h2>
+
+          <div style="display: flex; justify-content: space-around;">
+            <span class="status-label accepted">Accepted</span>
+            <span class="status-label pending">Pending</span>
+            <span class="status-label rejected">Rejected</span>
+          </div>
+        </div>
+
       </div>
     </section>
   </body>
