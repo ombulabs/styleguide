@@ -1,60 +1,59 @@
 table{
-        width: 100%;
-        border-spacing: 1rem;
-        border-collapse: collapse;
+  width: 100%;
+  border-spacing: 1rem;
+  border-collapse: collapse;
 
-        th, td{
-        border-collapse: collapse;
-        padding: 1rem;
-        }
+  th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+  }
 
-      th{
-        font-size: 1.125rem;
-        font-weight: 700;
-        text-align: left;
-        position: sticky;
-        top: 0;
-        vertical-align: middle;
-        background-color: $light-green;
-        &.status-header{
-            text-align: center;
-        }
-        &.number-cell{
-            padding-right: 0;
-        }
-      }
+  th{
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    vertical-align: middle;
+    background-color: $light-green;
+    &.status-header{
+      text-align: center;
+    }
+    &.number-cell{
+      padding-right: 0;
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $light_grey;
+  }
+
+  td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 350px;
+    &.number-cell{
+      text-align: right;
+    }
+  }
       
-      tr:nth-child(even) {
-        background-color: $light_grey;
+  a{
+    color: $dark_grey;
+    &:hover{
+      color: $magenta;
+    }
+  }
+
+  .actions-cell{
+    display: flex;
+    justify-content: space-between;
+    a{
+      width: 24px;
+      height: 24px;
+      i{
+        font-size: 1.25rem;
       }
-      td{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 350px;
-        &.number-cell{
-            text-align: right;
-        }
-      }
-      
-      a{
-        color: $dark_grey;
-        &:hover{
-          color: $magenta;
-        }
-      }
-      .actions-cell{
-          display: flex;
-          justify-content: space-between;
-          a{
-              width: 24px;
-              height: 24px;
-              i{
-                  font-size: 1.25rem;
-              }
-          }
-      }
-      
-      
-      
+    }
+  }    
 }
