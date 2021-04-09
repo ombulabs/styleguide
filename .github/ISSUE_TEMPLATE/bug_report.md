@@ -18,7 +18,7 @@ assignees: 'guardians-of-the-galaxy'
 
 **Version, Branch, or Commit:**
 
-Inform what version, branch, commit of Skunk you are using.
+Inform what version, branch, commit of the styleguide you are using.
 
 **Expected behavior:**
 
@@ -30,7 +30,7 @@ Please include a detailed description of the actual behavior of the application.
 
 **Steps to reproduce:**
 
-How do I achieve this behavior? Use the following format to provide a step-by-step guide:
+How did you achieve this behavior? Use the following format to provide a step-by-step guide:
 
 1. Step 1: ...
 2. Step 2: ...
