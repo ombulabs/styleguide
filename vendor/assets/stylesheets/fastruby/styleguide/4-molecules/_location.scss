@@ -2,16 +2,25 @@
   background-color: $grey;
   color: $white;
   padding: 13rem 1rem 6rem 1rem;
-  background-image: asset_url('bg-location-2.jpg');
+  background-image: asset_url("bg-location-2.jpg");
+  @supports (background-image: asset_url("bg-location-2.webp")) {
+    background-image: asset_url("bg-location-2.webp");
+  }
   background-position: 50% 53%;
   margin: 3rem -1rem 0 -1rem;
   @include respond-above(xs) {
     background-position: 50% 53%;
-    background-image: asset_url('bg-location-2.jpg');
+    background-image: asset_url("bg-location-2.jpg");
+    @supports (background-image: asset_url("bg-location-2.webp")) {
+      background-image: asset_url("bg-location-2.webp");
+    }
     margin: 0;
   }
   @include respond-above(sm) {
-    background-image: asset_url('bg-location.jpg');
+    background-image: asset_url("bg-location.jpg");
+    @supports (background-image: asset_url("bg-location.webp")) {
+      background-image: asset_url("bg-location.webp");
+    }
     background-position: 50% 173%;
     padding: 6rem 1rem;
   }
