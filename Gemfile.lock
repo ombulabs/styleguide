@@ -4,7 +4,7 @@ PATH
     ombulabs-styleguide (0.1.0)
       font-awesome-sass (~> 5.12.0)
       rails (>= 5.0.0)
-      sass-rails (~> 5.0)
+      sass-rails (>= 5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -170,4 +170,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   2.1.4
+   2.5.6
