@@ -3,8 +3,8 @@
 ******* application css *******
 ******************************/
 
-// Google Web Fonts
-@import url("https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:300,300i,400,400i,700,700i&display=swap");
+// Google Web Fonts are loaded by the consuming app via a preconnected,
+// non-blocking <link> in the page head, not here.
 
 // Font Awesome
 @import 'font-awesome-sprockets';
