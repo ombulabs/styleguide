@@ -1,0 +1,13 @@
+/******************************
+**** OMBULABS STYLEGUIDE ******
+****** GitHub page css ********
+******************************/
+
+// Styles for the styleguide's own GitHub page (index.html) only. They are
+// built into static/styleguide-page.css and are intentionally not part of
+// the styleguide shipped by the gem and the npm package.
+
+@import 'styleguide/1-utilities/breakpoints';
+@import 'styleguide/1-utilities/variables';
+
+@import 'page';

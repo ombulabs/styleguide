@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-BUNDLES     = %w[styleguide.css styleguide.js].freeze
+BUNDLES     = %w[styleguide.css styleguide-page.css styleguide.js].freeze
 BUILD_DIR   = File.expand_path('static')
 SOURCE_DIR  = File.expand_path('vendor/assets/')
+PAGE_DIR    = File.expand_path('page')
 
 desc 'Precompile assets'
 task :precompile_assets do
@@ -28,11 +29,12 @@ task :precompile_assets do
 
   sprockets.append_path(File.join(SOURCE_DIR, 'javascript', 'ombulabs'))
   sprockets.append_path(File.join(SOURCE_DIR, 'stylesheets', 'ombulabs'))
+  sprockets.append_path(PAGE_DIR)
   sprockets.append_gem_paths
 
   BUNDLES.each do |bundle|
     filename = File.join(BUILD_DIR, bundle)
-    min_filename = File.join(BUILD_DIR, bundle.gsub("styleguide", "styleguide.min"))
+    min_filename = File.join(BUILD_DIR, bundle.sub(/\.(css|js)\z/, '.min.\1'))
     map_filename = filename + ".map"
 
     sprockets
