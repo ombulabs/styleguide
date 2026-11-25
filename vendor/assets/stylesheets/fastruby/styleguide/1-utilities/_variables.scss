@@ -15,6 +15,125 @@ $soft-grey: #c4c4c4;
 $light-grey: #dadada;
 $lighter-grey: #EAEAEA;
 
+// Figma palette (FastRuby DS, "Color Palette" page).
+// Ramps run light (100) to dark (900). Each ramp's BASE step is noted below.
+
+// brand-primary (BASE: 500)
+$brand-primary-100: #dbffe7;
+$brand-primary-200: #99ffb9;
+$brand-primary-300: #57ff8c;
+$brand-primary-400: #14ff5f;
+$brand-primary-500: #00d242;
+$brand-primary-600: #00a835;
+$brand-primary-700: #00852a;
+$brand-primary-800: #005c1d;
+$brand-primary-900: #003310;
+
+// brand-secondary (BASE: 500)
+$brand-secondary-100: #fffbf0;
+$brand-secondary-200: #fee8a4;
+$brand-secondary-300: #ffde7a;
+$brand-secondary-400: #fdd458;
+$brand-secondary-500: #fdca31;
+$brand-secondary-600: #fdbf07;
+$brand-secondary-700: #d4a002;
+$brand-secondary-800: #ac8102;
+$brand-secondary-900: #7e5f01;
+
+// brand-tertiary (BASE: 500)
+$brand-tertiary-100: #ffc7c7;
+$brand-tertiary-200: #ff9494;
+$brand-tertiary-300: #ff6666;
+$brand-tertiary-400: #ff3333;
+$brand-tertiary-500: #ff0000;
+$brand-tertiary-600: #e00000;
+$brand-tertiary-700: #c20000;
+$brand-tertiary-800: #9e0000;
+$brand-tertiary-900: #800000;
+
+// neutral (BASE: 600)
+$neutral-white: #ffffff;
+$neutral-100: #f7f7f7;
+$neutral-200: #dedede;
+$neutral-300: #c5c4c4;
+$neutral-400: #abaaaa;
+$neutral-500: #929191;
+$neutral-600: #6e6d6d;
+$neutral-700: #484747;
+$neutral-800: #242424;
+$neutral-black: #000000;
+
+// utility-default (BASE: 500)
+$utility-default-100: #ddecfd;
+$utility-default-200: #b1d4fb;
+$utility-default-300: #86bbf9;
+$utility-default-400: #5aa3f6;
+$utility-default-500: #2f8bf4;
+$utility-default-600: #0c75ed;
+$utility-default-700: #0a62c7;
+$utility-default-800: #084fa0;
+$utility-default-900: #002c3d;
+
+// The palette as a map, used to render the swatches on the styleguide page.
+$palette: (
+  "brand-primary": (
+    "100": $brand-primary-100,
+    "200": $brand-primary-200,
+    "300": $brand-primary-300,
+    "400": $brand-primary-400,
+    "500": $brand-primary-500,
+    "600": $brand-primary-600,
+    "700": $brand-primary-700,
+    "800": $brand-primary-800,
+    "900": $brand-primary-900
+  ),
+  "brand-secondary": (
+    "100": $brand-secondary-100,
+    "200": $brand-secondary-200,
+    "300": $brand-secondary-300,
+    "400": $brand-secondary-400,
+    "500": $brand-secondary-500,
+    "600": $brand-secondary-600,
+    "700": $brand-secondary-700,
+    "800": $brand-secondary-800,
+    "900": $brand-secondary-900
+  ),
+  "brand-tertiary": (
+    "100": $brand-tertiary-100,
+    "200": $brand-tertiary-200,
+    "300": $brand-tertiary-300,
+    "400": $brand-tertiary-400,
+    "500": $brand-tertiary-500,
+    "600": $brand-tertiary-600,
+    "700": $brand-tertiary-700,
+    "800": $brand-tertiary-800,
+    "900": $brand-tertiary-900
+  ),
+  "neutral": (
+    "white": $neutral-white,
+    "100": $neutral-100,
+    "200": $neutral-200,
+    "300": $neutral-300,
+    "400": $neutral-400,
+    "500": $neutral-500,
+    "600": $neutral-600,
+    "700": $neutral-700,
+    "800": $neutral-800,
+    "black": $neutral-black
+  ),
+  "utility-default": (
+    "100": $utility-default-100,
+    "200": $utility-default-200,
+    "300": $utility-default-300,
+    "400": $utility-default-400,
+    "500": $utility-default-500,
+    "600": $utility-default-600,
+    "700": $utility-default-700,
+    "800": $utility-default-800,
+    "900": $utility-default-900
+  )
+);
+
 // Measurements
 $image_isotype_height: 70px;
 
